@@ -42,6 +42,20 @@ a:hover {
 }
 
 /* ============================================
+   FULL WIDTH TITLE
+   ============================================ */
+
+.quarto-title-block .quarto-title h1 {
+  font-size: 2.8em !important;
+  line-height: 1.2 !important;
+}
+
+#title-block-header {
+  grid-column: body-start / page-end !important;
+  padding-left: 1.8em !important;
+}
+
+/* ============================================
    STICKY NOTE
    ============================================ */
 
@@ -50,54 +64,33 @@ a:hover {
   border: 1px solid #f0d060 !important;
   border-radius: 2px !important;
   padding: 1em 1.2em !important;
-  margin: 1.5em 0 2.5em auto !important;
-  width: 340px !important;
-  float: right !important;
+  margin: 0 0 0.5em 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  float: none !important;
   font-family: 'Helvetica Neue', Arial, sans-serif !important;
-  font-size: 0.82em !important;
+  font-size: 0.95em !important;
   line-height: 1.6 !important;
-  box-shadow: 4px 4px 12px rgba(0,0,0,0.15), -1px -1px 4px rgba(0,0,0,0.05) !important;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.15) !important;
   transform: rotate(1.8deg) !important;
   position: relative !important;
   z-index: 1 !important;
 }
 
 /* ============================================
-   INTRO WRAPPER
+   INTRO BOX
    ============================================ */
 
-.intro-wrapper {
-  border-left: 3px solid #d4c9b8 !important;
-  padding-left: 1.4em !important;
-  margin: 2em 0 2.5em 0 !important;
-}
-
-/* ============================================
-   INTRO BLOCK
-   ============================================ */
-
-.intro {
+.intro-box {
+  background-color: #f5f2ee !important;
+  border-radius: 8px !important;
+  padding: 2em 2.4em !important;
+  margin: 0.5em 0 1em 0 !important;
+  font-size: 1.02em !important;
+  line-height: 1.9 !important;
+  border: 3px solid #d4c9b8 !important;
   font-style: italic !important;
-  font-size: 1.08em !important;
-  line-height: 1.95 !important;
   color: #3a3a3a !important;
-  margin: 0 360px 0 0 !important;
-  background-color: transparent !important;
-  text-align: justify !important;
-}
-
-/* ============================================
-   INTRO CONTINUED
-   ============================================ */
-
-.intro-continued {
-  font-style: italic !important;
-  font-size: 1.08em !important;
-  line-height: 1.95 !important;
-  color: #3a3a3a !important;
-  margin: 0 !important;
-  clear: right !important;
-  text-align: justify !important;
 }
 
 /* ============================================
@@ -108,7 +101,7 @@ div.callout-tip {
   background-color: #f0f7f4 !important;
   border-left: 4px solid #2a9d8f !important;
   border-radius: 0 6px 6px 0 !important;
-  padding: 0.2em 0 !important;
+  padding: 0.2em 0.2em 0.2em 0 !important;
   margin: 1.8em 0 !important;
 }
 
@@ -121,15 +114,6 @@ div.callout-tip .callout-body {
   font-family: 'Helvetica Neue', Arial, sans-serif !important;
   font-size: 0.95em !important;
   color: #2c2c2c !important;
-}
-
-/* Tighten callout box padding */
-div.callout-tip {
-  background-color: #f0f7f4 !important;
-  border-left: 4px solid #2a9d8f !important;
-  border-radius: 0 6px 6px 0 !important;
-  padding: 0.2em 0.2em 0.2em 0 !important;
-  margin: 1.8em 0 !important;
 }
 
 /* ============================================
@@ -155,7 +139,7 @@ div.callout-tip {
   margin: 3em 0 !important;
   font-size: 1.02em !important;
   line-height: 1.9 !important;
-  border: 3px solid #a8d8d3 !important;
+  border: 3px solid #d4c9b8 !important;
 }
 
 .closing h2 {
@@ -242,3 +226,69 @@ tr:hover td {
   display: none !important;
 }
 
+/* ============================================
+   COLUMN MARGIN PHOTOS
+   ============================================ */
+
+.column-margin img {
+  width: 100% !important;
+  display: block !important;
+  border-radius: 3px !important;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2) !important;
+  margin-top: 1em !important;
+  margin-bottom: 0.4em !important;
+}
+
+.column-margin p {
+  margin-top: 0.2em !important;
+  margin-bottom: 1.6em !important;
+  font-family: 'Helvetica Neue', Arial, sans-serif !important;
+  font-size: 0.88em !important;
+  color: #888 !important;
+  font-style: italic !important;
+}
+
+/* ============================================
+   PULL QUOTES
+   ============================================ */
+
+.pull-quote {
+  border-left: 3px solid #2a9d8f !important;
+  padding: 0.6em 1em !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 0 !important;
+  font-family: 'Georgia', serif !important;
+  font-size: 0.95em !important;
+  font-style: italic !important;
+  color: #3a3a3a !important;
+  line-height: 1.6 !important;
+}
+
+/* ============================================
+   FACT BOXES
+   ============================================ */
+
+.fact-box {
+  background-color: #f0f7f4 !important;
+  border-radius: 6px !important;
+  padding: 0.9em 1em !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 0 !important;
+  font-family: 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+.fact-box .fact-number {
+  font-size: 1.6em !important;
+  font-weight: 700 !important;
+  color: #2a9d8f !important;
+  line-height: 1.2 !important;
+  display: block !important;
+}
+
+.fact-box .fact-label {
+  font-size: 0.78em !important;
+  color: #555 !important;
+  line-height: 1.4 !important;
+  display: block !important;
+  margin-top: 0.2em !important;
+}
