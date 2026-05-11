@@ -1,5 +1,6 @@
 ---
 title: "I've Just Travelled the World as a Type 1 Diabetic. Here Are 10 Things You Should Know."
+author: "Tom Bird"
 format:
   html:
     theme: journal
