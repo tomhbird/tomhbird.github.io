@@ -50,10 +50,6 @@ Start ordering as frequently as your prescription allows, at least 6 months befo
 
 ![](images/compressed_IMG_4651.JPG)
 
-<div class="pull-quote">
-I didn't let diabetes dictate where we went or what we did. I just factored it into the logistics.
-</div>
-
 ![](images/compressed_IMG_5861.jpeg)
 
 ![](images/compressed_8090b546.jpg)
@@ -70,12 +66,11 @@ I didn't let diabetes dictate where we went or what we did. I just factored it i
 
 ![](images/compressed_IMG_6857.jpeg)
 
+![](images/compressed_IMG_6318.jpeg)
 <div class="fact-box">
 <span class="fact-number">Don't put insulin in the hold</span>
 <span class="fact-label">Cargo holds can drop to temperatures that will freeze and destroy your supply.</span>
 </div>
-
-![](images/compressed_IMG_6318.jpeg)
 
 ![](images/compressed_IMG_6363.jpeg)
 
@@ -249,7 +244,6 @@ When you apply, be thorough and be honest. Insurers ask specific and detailed qu
 **Declare everything:** The questions insurers ask are specific and deliberate. An undeclared condition is grounds for a claim to be rejected entirely.
 :::
 
-:::
 
 ## 10. Tell the People Around You. It Might Save Your Life.
 
@@ -282,5 +276,144 @@ It's the best thing I've ever done. Go do yours.
 
 :::
 
-
 *If you're ready to start planning, the resources below are a good place to begin.*
+
+## Resources {.resources-hidden}
+
+::: {.column-page}
+::: {.resource-section}
+
+<details>
+<summary>United Kingdom</summary>
+<div class="resource-grid">
+
+<div class="resource-card">
+<h4>Apply for a GHIC</h4>
+<p>Free NHS card giving you access to state healthcare in Australia, New Zealand and all EU countries. Essential first step before any long trip.</p>
+<a href="https://www.nhs.uk/using-the-nhs/healthcare-abroad/apply-for-a-free-uk-global-health-insurance-card-ghic/" target="_blank">nhs.uk →</a>
+</div>
+
+<div class="resource-card">
+<h4>Diabetes UK travel guidance</h4>
+<p>Comprehensive advice on travelling with diabetes, including packing lists, airport tips, time zone management and insurance guidance.</p>
+<a href="https://www.diabetes.org.uk/living-with-diabetes/life-with-diabetes/travel" target="_blank">diabetes.org.uk →</a>
+</div>
+
+<div class="resource-card">
+<h4>Frio insulin cooling wallets</h4>
+<p>Evaporative cooling pouches that keep insulin safe for 45 hours minimum without ice or electricity. Essential for travel in warm climates.</p>
+<a href="https://friouk.com/" target="_blank">friouk.com →</a>
+</div>
+
+<div class="resource-card">
+<h4>Diabetes UK insulin ID card</h4>
+<p>Free card stating you are insulin dependent, with translations into French, Spanish, German, Polish and several other languages.</p>
+<a href="https://shop.diabetes.org.uk/products/diabetes-uk-insulin-id-cards" target="_blank">shop.diabetes.org.uk →</a>
+</div>
+
+</div>
+</details>
+
+<details>
+<summary>Australia</summary>
+<div class="resource-grid">
+
+<div class="resource-card">
+<h4>NDSS guide for visitors to Australia</h4>
+<p>Specific guidance from the NDSS on accessing diabetes supplies and services if you are visiting or moving to Australia from another country.</p>
+<a href="https://www.ndss.com.au/living-with-diabetes/driving-and-travel/visiting-or-moving-to-australia/" target="_blank">ndss.com.au →</a>
+</div>
+
+<div class="resource-card">
+<h4>NDSS registration</h4>
+<p>Australia's national diabetes scheme. Register to access subsidised insulin, needles and CGM consumables. Requires Medicare enrolment first.</p>
+<a href="https://www.ndss.com.au/about-the-ndss/registration/" target="_blank">ndss.com.au →</a>
+</div>
+
+<div class="resource-card">
+<h4>Medicare enrolment for UK visitors</h4>
+<p>UK visitors covered by the reciprocal healthcare agreement can enrol in Medicare on arrival. Do this as soon as you land.</p>
+<a href="https://www.gov.uk/guidance/uk-reciprocal-healthcare-agreements-with-non-eu-countries" target="_blank">gov.uk →</a>
+</div>
+
+<div class="resource-card">
+<h4>Diabetes Australia</h4>
+<p>Australia's national diabetes organisation. Useful for finding local diabetes teams, support services and information about accessing supplies.</p>
+<a href="https://www.diabetesaustralia.com.au" target="_blank">diabetesaustralia.com.au →</a>
+</div>
+
+
+
+</div>
+</details>
+
+<details>
+<summary>New Zealand</summary>
+<div class="resource-grid">
+
+<div class="resource-card">
+<h4>Reciprocal healthcare guidance</h4>
+<p>New Zealand is covered under the UK reciprocal healthcare agreement. Check GOV.UK for current documentation requirements before travel.</p>
+<a href="https://www.gov.uk/guidance/uk-reciprocal-healthcare-agreements-with-non-eu-countries" target="_blank">gov.uk →</a>
+</div>
+
+<div class="resource-card">
+<h4>Diabetes New Zealand</h4>
+<p>New Zealand's national diabetes organisation. Can help with finding local support and understanding what supplies are available in country.</p>
+<a href="https://www.diabetes.org.nz" target="_blank">diabetes.org.nz →</a>
+</div>
+
+</div>
+</details>
+
+<details>
+<summary>Global</summary>
+<div class="resource-grid">
+
+<div class="resource-card">
+<h4>Translated medical ID cards</h4>
+<p>Wallet-sized cards stating you are diabetic and need sugar urgently, available in Thai, Japanese, Korean and 30+ other languages. Ships internationally.</p>
+<a href="https://www.selectwisely.com/products/Diabetes_Type_1_Emergency_Card" target="_blank">selectwisely.com →</a>
+</div>
+
+<div class="resource-card">
+<h4>MedicAlert ID bracelet</h4>
+<p>Internationally recognised medical ID bracelet personalised with your condition, medication and emergency contact details.</p>
+<a href="https://www.medicalert.org.uk" target="_blank">medicalert.org.uk →</a>
+</div>
+
+<div class="resource-card">
+<h4>Dexcom CGM information</h4>
+<p>Check country-specific availability of Dexcom products before you travel. Product availability varies significantly by region.</p>
+<a href="https://www.dexcom.com" target="_blank">dexcom.com →</a>
+</div>
+
+<div class="resource-card">
+<h4>Abbott Libre CGM information</h4>
+<p>Check regional sensor and app compatibility before travelling. Some regions require a different app version to the one used in the UK.</p>
+<a href="https://www.freestylelibre.co.uk" target="_blank">freestylelibre.co.uk →</a>
+</div>
+
+<div class="resource-card">
+<h4>Diabetes travel insurance comparison</h4>
+<p>Specialist comparison tool for travel insurance with pre-existing conditions. Covers both Type 1 and Type 2. Always declare everything.</p>
+<a href="https://www.medicaltravelcompared.co.uk/travel-insurance/medical/diabetic/" target="_blank">medicaltravelcompared.co.uk →</a>
+</div>
+
+<div class="resource-card">
+<h4>AllClear diabetes travel insurance</h4>
+<p>Recommended by Diabetes UK. Specialist cover for Type 1 including lost insulin, emergency medical care and repatriation.</p>
+<a href="https://www.allcleartravel.co.uk/medical-conditions/diabetes/" target="_blank">allcleartravel.co.uk →</a>
+</div>
+
+<div class="resource-card">
+<h4>Travelling with T1D guide</h4>
+<p>Comprehensive travel guidance specifically for Type 1 diabetics, covering preparation, supplies, insurance and managing your condition on the road.</p>
+<a href="https://breakthrought1d.org.au/resources/travelling-with-t1d/" target="_blank">breakthrought1d.org.au →</a>
+</div>
+
+</div>
+</details>
+
+:::
+:::
