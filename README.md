@@ -6,7 +6,7 @@ What it is:
 I've Just Travelled the World as a Type 1 Diabetic. Here Are 10 Things You Should Know. It's a long-form travel piece covering eight months across the US, Australia, New Zealand, Thailand, Vietnam, Japan, and South Korea. It's written from personal experience and aimed at anyone with Type 1 diabetes who wants to travel but isn't sure where to start.
 The article is also a portfolio piece. I wanted to demonstrate what I can do with Quarto beyond a standard rendered document, so the design, layout, and interactivity were all built deliberately rather than left to defaults.
 
-What it's built with
+What it's built with:
 Quarto for document structure, rendering, and the three-column layout.
 Custom CSS for typography, the editorial margin column, callout styling, pull quotes, fact boxes, and the collapsible resource section
 GitHub Pages for hosting.
