@@ -13,97 +13,100 @@ format:
     highlight-style: github
     embed-resources: true
     css: styles.css
+    lightbox: true
 fontsize: 1.1em
 linestretch: 1.7
 ---
 
 ::: {.column-margin}
 ::: {.sticky-note}
-📌 *This article is written in Quarto and hosted via GitHub Pages. As a Cognitive Neuroscience graduate with a passion for coding, I wanted to use this project to demonstrate what I can do, from clean reproducible document production to custom styling and interactive elements. If you've landed here from my LinkedIn or GitHub, I hope the code is as interesting as the content.*
+📌 *This article is written in Quarto and hosted via GitHub Pages. As a Cognitive Neuroscience graduate who enjoys a bit of coding here and there, I wanted to use this project to demonstrate what I can do, from clean reproducible document production to custom styling and interactive elements. If you've landed here from my LinkedIn or GitHub, I hope the code is as interesting as the content.*
 :::
 
-![](images/compressed_IMG_4141.JPG)
+![](images/compressed_IMG_4141.JPG){description="K'Gari gang, better known as the Dingo Divas."}
 
-![](images/compressed_IMG_4035.jpeg)
+![](images/compressed_IMG_4035.jpeg){description="Some of the Melbourne family."}
 
 <div class="pull-quote">
 Start ordering as frequently as your prescription allows, at least 6 months before you leave.
 </div>
 
-![](images/compressed_IMG_0933.jpeg)
+![](images/compressed_IMG_0933.jpeg){description="Early days of camping in New Zealand, before the reality of 3 boys living out of a car hit."}
 
-![](images/compressed_IMG_9567.jpeg)
+![](images/compressed_IMG_9567.jpeg){description="Warner Bros Studio tour in LA."}
 
-![](images/compressed_IMG_1082.jpeg)
+![](images/compressed_IMG_1082.jpeg){description="Started at 2am, sprained ankle, pitch black, four hours of uphill. Turns out a sunrise at the top of Roy's Peak is worth every single hobbled step."}
 
 <div class="fact-box">
 <span class="fact-number">$190 AUD</span>
 <span class="fact-label">Cost of a single box of insulin without Medicare. With it: $30 to $35.</span>
 </div>
 
-![](images/compressed_IMG_6703.jpeg)
-![](images/compressed_IMG_7199.jpeg)
+![](images/compressed_IMG_6703.jpeg){description="What I wouldn't give to do the Ha Giang loop again."}
 
-![](images/compressed_IMG_4699.jpeg)
+![](images/compressed_IMG_7199.jpeg){description="Vietnamese cooking class in Hoi An."}
 
-![](images/compressed_IMG_4644.jpeg)
+![](images/compressed_IMG_4699.jpeg){description="The dreaded butane gas stove."}
 
-![](images/compressed_IMG_4651.JPG)
+![](images/compressed_IMG_4644.jpeg){description="Ophelia. She was an absolute beast."}
 
-![](images/compressed_IMG_5861.jpeg)
+![](images/compressed_IMG_4651.JPG){description="My surname isn't Bird for nothing. After being explicitly told not to jump feet first, I did just that! Nevis Bungy, you sure did have my legs trembling."}
 
-![](images/compressed_8090b546.jpg)
+![](images/compressed_IMG_5861.jpeg){description="Who would've though a bucket of mystery spirits and sugar would be a bad idea for a diabetic?"}
 
-![](images/compressed_IMG_6673.jpeg)
+![](images/compressed_8090b546.jpg){description="Hoi An was far too fun."}
 
-![](images/compressed_IMG_7415.jpeg)
+![](images/compressed_IMG_6673.jpeg){description="Another stunner from the loop."}
 
-![](images/compressed_IMG_5175.jpeg)
+![](images/compressed_IMG_7415.jpeg){description="How I miss wondering into unassuming resturants in Japan and getting served an absolute 10/10 meal."}
 
-![](images/compressed_IMG_3882.jpeg)
+![](images/compressed_IMG_5175.jpeg){description="Sadly this wasn't our tent. Instead, ours was £20 off FB marketplace and had very little structural integrity."}
 
-![](images/compressed_IMG_7754.jpeg)
+![](images/compressed_IMG_3882.jpeg){description="Daily changs on the Khao San Road are a must."}
 
-![](images/compressed_IMG_6857.jpeg)
+![](images/compressed_IMG_7754.jpeg){description="Mount Fuji doing the heavy lifting in this pic."}
 
-![](images/compressed_IMG_6318.jpeg)
+![](images/compressed_IMG_6857.jpeg){description="The views from the loop genuinely never get old."}
+
+![](images/compressed_IMG_6318.jpeg){description="Vertically climbed a rock face using a dodgy rope to get this pic. Koh Tao was far too pretty."}
+
 <div class="fact-box">
 <span class="fact-number">Don't put insulin in the hold</span>
 <span class="fact-label">Cargo holds can drop to temperatures that will freeze and destroy your supply.</span>
 </div>
 
-![](images/compressed_IMG_6363.jpeg)
+![](images/compressed_IMG_6363.jpeg){description="Thai sunsets were unmatched."}
 
-![](images/compressed_IMG_6928.jpeg)
+![](images/compressed_IMG_6928.jpeg){description="Is it obvious enough that I did the Ha Giang loop yet?"}
 
-![](images/compressed_IMG_7557.jpeg)
+![](images/compressed_IMG_7557.jpeg){description="Japanese architecture combined with its landscape is unrivaled."}
 
 <div class="fact-box">
 <span class="fact-number">17 hours</span>
 <span class="fact-label">The hardest time zone shift of the trip. Los Angeles to Melbourne.</span>
 </div>
 
-![](images/compressed_45478592.jpg)
+![](images/compressed_45478592.jpg){description="Reunion after a very wet and stormy Whitsundays tour."}
 
-![](images/compressed_IMG_7437.jpeg)
+![](images/compressed_IMG_7437.jpeg){description="Many a torii was visited."}
 
-![](images/compressed_IMG_7820.jpeg)
+![](images/compressed_IMG_7820.jpeg){description="Mount Fuji really brought out my inner photographer."}
 
-![](images/compressed_IMG_7919.jpeg)
+![](images/compressed_IMG_7919.jpeg){description="One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insaneley delicious fusion dishes."}
 
-![](images/compressed_IMG_6963.jpeg)
+![](images/compressed_IMG_6963.jpeg){description="The meals at the homestay's in Vietnam were always the best."}
 
 <div class="pull-quote">
 Managing Type 1 diabetes while travelling through some fairly remote parts of the world is something to be proud of.
 </div>
 
-![](images/compressed_IMG_4308.jpeg)
+![](images/compressed_IMG_4308.jpeg){description="Coastal hike from Bondi Beach to Manly Beach."}
 
-![](images/compressed_IMG_3627.jpeg)
+![](images/compressed_IMG_3627.jpeg){description="Trejo's Tacos in The Original Farmers Market, LA."}
 
-![](images/compressed_IMG_4417.jpeg)
+![](images/compressed_IMG_4417.jpeg){description="Australian Open, Djokovic vs. Basavareddy."}
 
-![](images/compressed_0CF21C9F.jpg)
+![](images/compressed_0CF21C9F.jpg){description="Kokoda Memorial Walk, also known as The Thousand Steps hike. Fair to say we were sweaty messes by the time we got to the top."}
 :::
 
 ::: {.intro-box}
@@ -288,12 +291,6 @@ It's the best thing I've ever done. Go do yours.
 <div class="resource-grid">
 
 <div class="resource-card">
-<h4>Apply for a GHIC</h4>
-<p>Free NHS card giving you access to state healthcare in Australia, New Zealand and all EU countries. Essential first step before any long trip.</p>
-<a href="https://www.nhs.uk/using-the-nhs/healthcare-abroad/apply-for-a-free-uk-global-health-insurance-card-ghic/" target="_blank">nhs.uk →</a>
-</div>
-
-<div class="resource-card">
 <h4>Diabetes UK travel guidance</h4>
 <p>Comprehensive advice on travelling with diabetes, including packing lists, airport tips, time zone management and insurance guidance.</p>
 <a href="https://www.diabetes.org.uk/living-with-diabetes/life-with-diabetes/travel" target="_blank">diabetes.org.uk →</a>
@@ -309,6 +306,12 @@ It's the best thing I've ever done. Go do yours.
 <h4>Diabetes UK insulin ID card</h4>
 <p>Free card stating you are insulin dependent, with translations into French, Spanish, German, Polish and several other languages.</p>
 <a href="https://shop.diabetes.org.uk/products/diabetes-uk-insulin-id-cards" target="_blank">shop.diabetes.org.uk →</a>
+</div>
+
+<div class="resource-card">
+<h4>Apply for a GHIC</h4>
+<p>Free NHS card that gives you access to state healthcare across Europe at the same cost as locals. Also useful to have in Australia and New Zealand, though you will still need to register with Medicare and the NDSS separately on arrival.</p>
+<a href="https://www.nhs.uk/using-the-nhs/healthcare-abroad/apply-for-a-free-uk-global-health-insurance-card-ghic/" target="_blank">nhs.uk →</a>
 </div>
 
 </div>
