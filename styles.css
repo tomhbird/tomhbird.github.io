@@ -330,7 +330,7 @@ details[open] summary::before {
   gap: 0.5em;
 }
 
-.resource-card h4 {
+.resource-card h3 {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 0.95em;
   font-weight: 700;

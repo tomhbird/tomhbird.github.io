@@ -9,10 +9,10 @@ format:
     toc-title: "Jump to"
     toc-depth: 2
     smooth-scroll: true
-    code-fold: true
-    code-tools: true
+    code-fold: false
+    code-tools: false
     highlight-style: github
-    embed-resources: true
+    embed-resources: false
     css: styles.css
     lightbox: true
 fontsize: 1.1em
@@ -21,7 +21,9 @@ linestretch: 1.7
 
 ::: {.column-margin}
 ::: {.sticky-note}
-📌 *This article is written in Quarto and hosted via GitHub Pages. As a Cognitive Neuroscience graduate who enjoys a bit of coding here and there, I wanted to use this project to demonstrate what I can do, from clean reproducible document production to custom styling and interactive elements. If you've landed here from my LinkedIn or GitHub, I hope the code is as interesting as the content.*
+📌 *This article is written in Quarto and hosted via GitHub Pages. As a Cognitive Neuroscience graduate with a passion for coding, I wanted to use this project to demonstrate what I can do, from clean reproducible document production to custom styling and interactive elements. If you've landed here from my LinkedIn or GitHub, the full source code including the stylesheet is in the repository below.*
+
+[View on GitHub →](https://github.com/tomhbird/tomhbird.github.io)
 :::
 
 ![](images/compressed_IMG_4141.JPG){description="K'Gari gang, better known as the Dingo Divas."}
@@ -53,13 +55,13 @@ Start ordering as frequently as your prescription allows, at least 6 months befo
 
 ![](images/compressed_IMG_4651.JPG){description="My surname isn't Bird for nothing. After being explicitly told not to jump feet first, I did just that! Nevis Bungy, you sure did have my legs trembling."}
 
-![](images/compressed_IMG_5861.jpeg){description="Who would've though a bucket of mystery spirits and sugar would be a bad idea for a diabetic?"}
+![](images/compressed_IMG_5861.jpeg){description="Who would've thought a bucket of mystery spirits and sugar would be a bad idea for a diabetic?"}
 
 ![](images/compressed_8090b546.jpg){description="Hoi An was far too fun."}
 
 ![](images/compressed_IMG_6673.jpeg){description="Another stunner from the loop."}
 
-![](images/compressed_IMG_7415.jpeg){description="How I miss wondering into unassuming resturants in Japan and getting served an absolute 10/10 meal."}
+![](images/compressed_IMG_7415.jpeg){description="How I miss wandering into unassuming restaurants in Japan and getting served an absolute 10/10 meal."}
 
 ![](images/compressed_IMG_5175.jpeg){description="Sadly this wasn't our tent. Instead, ours was £20 off FB marketplace and had very little structural integrity."}
 
@@ -93,9 +95,9 @@ Start ordering as frequently as your prescription allows, at least 6 months befo
 
 ![](images/compressed_IMG_7820.jpeg){description="Mount Fuji really brought out my inner photographer."}
 
-![](images/compressed_IMG_7919.jpeg){description="One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insaneley delicious fusion dishes."}
+![](images/compressed_IMG_7919.jpeg){description="One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes."}
 
-![](images/compressed_IMG_6963.jpeg){description="The meals at the homestay's in Vietnam were always the best."}
+![](images/compressed_IMG_6963.jpeg){description="The meals at the homestays in Vietnam were always the best."}
 
 <div class="pull-quote">
 Managing Type 1 diabetes while travelling through some fairly remote parts of the world is something to be proud of.
@@ -118,7 +120,7 @@ I spent eight months travelling across seven countries, the US, Australia, New Z
 A year on from coming home, here are the ten things I wish someone had told me before I left.
 :::
 
-## 1. Begin Stocking Up on Medicine at Least 6 Months Before Leaving
+## 1. Begin Stocking Up on Medicine at Least 6 Months Before Leaving {#stocking-up}
 
 Like most Type 1 diabetics, I already had a reasonable backstock at home, the kind you quietly accumulate for those just in case moments. But preparing for eight months of travel required a more deliberate approach. Rather than ordering when I genuinely needed to, I started ordering on a set schedule, as frequently as my prescription would allow, slowly building a substantial surplus over the course of a year. I never ordered more than my recommended amount at any one time, I just stopped waiting until I was running low.
 
@@ -132,7 +134,7 @@ If you're reading this six weeks before you leave and haven't started yet, you'r
 **Start here:** Your diabetes team wants to help you do this safely. Book an appointment before you do anything else. They have done this before.
 :::
 
-## 2. Reciprocal Healthcare Agreements Are Your Best Friend
+## 2. Reciprocal Healthcare Agreements Are Your Best Friend {#reciprocal-healthcare}
 
 The UK currently has reciprocal healthcare agreements with all EU countries, Switzerland, Norway, Iceland, Liechtenstein, Australia, New Zealand, and several other territories. Of the seven countries I visited, Australia and New Zealand were covered. Thailand, Vietnam, Japan, and South Korea were not, which is exactly why travel insurance is covered separately as its own non-negotiable point.
 
@@ -146,7 +148,7 @@ The process itself was straightforward once I knew what to do. I found the Melbo
 **Get in touch before you go:** If you're planning a long stay in Australia, email the local diabetes team before you arrive so you know exactly what to expect.
 :::
 
-## 3. Expect Fluctuations. Diet Is Always Changing.
+## 3. Expect Fluctuations. Diet Is Always Changing.{#fluctuations}
 
 Blood sugar management when travelling is less about control and more about constant recalibration. The version of yourself that carefully counts carbs at home, cooking familiar meals in a familiar kitchen, bears almost no resemblance to the version eating off a gas stove in rural New Zealand or navigating a street food market in Bangkok.
 
@@ -162,7 +164,7 @@ The honest advice is this: expect fluctuations, don't fear them. It's completely
 **Worth remembering:** Portion sizes vary enormously across different countries and cuisines. Even a dish you think you know how to dose for can catch you out when the portion is twice the size you expected. Factor that in.
 :::
 
-## 4. Expect to Eat Out. A Lot.
+## 4. Expect to Eat Out. A Lot.{#eating-out}
 
 Eating out when you're travelling isn't just a nice treat, it's largely unavoidable, and for a Type 1 diabetic it introduces a layer of unpredictability that takes some getting used to. When you cook your own food, you know exactly what's in it. When you're handed a menu in a language you don't speak, in a country you arrived in three days ago, the best you can do is make an educated guess and adjust from there.
 
@@ -176,7 +178,7 @@ The other practical reality is excursion planning. On group day tours, meals wer
 **Language barrier tip:** Consider carrying a medical translation card that states you are diabetic and may need sugar quickly. I winged it and was lucky. You might not be.
 :::
 
-## 5. Expect Extreme Temperatures and Know How to Keep Insulin Safe
+## 5. Expect Extreme Temperatures and Know How to Keep Insulin Safe {#insulin-temperature}
 
 Insulin is more fragile than most people realise, and travelling across climates as varied as a New Zealand summer hike, a Melbourne autumn, and a Thai monsoon season will test whatever storage system you have. Getting this wrong isn't an inconvenience, it's a medical emergency.
 
@@ -190,7 +192,7 @@ The other challenge was hiking in New Zealand during summer. Leaving insulin in 
 **Do not do what I did:** If you're using Frio bags, air out your storage bag every couple of days, especially in humid climates. Set a reminder on your phone if you need to.
 :::
 
-## 6. Be Prepared for Issues. Bring Backups and Assume You Will Run Out.
+## 6. Be Prepared for Issues. Bring Backups and Assume You Will Run Out. {#backups}
 
 The optimistic version of packing for a long trip is bringing exactly what you need. The realistic version is bringing what you need, plus a buffer for everything that can and will go wrong.
 
@@ -206,7 +208,7 @@ One practical detail worth knowing: Australia didn't have access to the Dexcom G
 **Buffer rule:** Don't plan to finish your trip with zero supplies remaining. Plan to finish with enough to cover a month of device failures. The margin isn't wasteful, it's essential.
 :::
 
-## 7. Get Familiar With Airport Security and Carry Documentation
+## 7. Get Familiar With Airport Security and Carry Documentation {#airport-security}
 
 I was searched at virtually every airport I passed through. With the volume of medication, devices, and consumables I was carrying, that was always going to be the case, and the only thing that made it manageable was being prepared for it and giving myself enough time.
 
@@ -220,7 +222,7 @@ One thing worth flagging: do not put your insulin in the hold. Cargo holds can d
 **Before you fly:** Apply for a translated medical ID card. Several services offer wallet sized cards listing your condition and medication needs in multiple languages. It takes minutes and could save you significant stress at security.
 :::
 
-## 8. Time Zone Changes Mess With Your Routine More Than You Think
+## 8. Time Zone Changes Mess With Your Routine More Than You Think {#time-zones}
 
 Crossing time zones is disorienting for anyone. For someone on a basal and bolus insulin regime, it adds a layer of complexity that your body doesn't particularly care about and your insulin certainly doesn't account for.
 
@@ -234,7 +236,7 @@ One thing that genuinely helped was being on Tresiba as my long acting insulin. 
 **Ask before you go:** Talk to your diabetes team specifically about time zone management. If you're on a long-acting insulin, know its duration of action and what happens if your timing shifts. Don't assume it'll sort itself out.
 :::
 
-## 9. Travel Insurance That Covers Diabetes Is Non-Negotiable
+## 9. Travel Insurance That Covers Diabetes Is Non-Negotiable {#travel-insurance}
 
 This is the least exciting point in the article and the most important one. Get travel insurance that fully covers your diabetes. Declare everything. Do not cut corners here.
 
@@ -249,7 +251,7 @@ When you apply, be thorough and be honest. Insurers ask specific and detailed qu
 :::
 
 
-## 10. Tell the People Around You. It Might Save Your Life.
+## 10. Tell the People Around You. It Might Save Your Life. {#tell-people}
 
 There is a tendency among people with chronic conditions to manage quietly, to not want to be a burden, to avoid the look of concern that crosses someone's face when you explain what happens if things go wrong. I understand that instinct and I'd encourage you to ignore it completely.
 
@@ -292,27 +294,27 @@ It's the best thing I've ever done. Go do yours.
 <div class="resource-grid">
 
 <div class="resource-card">
-<h4>Diabetes UK travel guidance</h4>
+<h3>Diabetes UK travel guidance</h3>
 <p>Comprehensive advice on travelling with diabetes, including packing lists, airport tips, time zone management and insurance guidance.</p>
-<a href="https://www.diabetes.org.uk/living-with-diabetes/life-with-diabetes/travel" target="_blank">diabetes.org.uk →</a>
+<a href="https://www.diabetes.org.uk/living-with-diabetes/life-with-diabetes/travel" target="_blank" rel="noopener noreferrer">diabetes.org.uk →</a>
 </div>
 
 <div class="resource-card">
-<h4>Frio insulin cooling wallets</h4>
+<h3>Frio insulin cooling wallets</h3>
 <p>Evaporative cooling pouches that keep insulin safe for 45 hours minimum without ice or electricity. Essential for travel in warm climates.</p>
-<a href="https://friouk.com/" target="_blank">friouk.com →</a>
+<a href="https://friouk.com/" target="_blank" rel="noopener noreferrer">friouk.com →</a>
 </div>
 
 <div class="resource-card">
-<h4>Diabetes UK insulin ID card</h4>
+<h3>Diabetes UK insulin ID card</h3>
 <p>Free card stating you are insulin dependent, with translations into French, Spanish, German, Polish and several other languages.</p>
-<a href="https://shop.diabetes.org.uk/products/diabetes-uk-insulin-id-cards" target="_blank">shop.diabetes.org.uk →</a>
+<a href="https://shop.diabetes.org.uk/products/diabetes-uk-insulin-id-cards" target="_blank" rel="noopener noreferrer">shop.diabetes.org.uk →</a>
 </div>
 
 <div class="resource-card">
-<h4>Apply for a GHIC</h4>
+<h3>Apply for a GHIC</h3>
 <p>Free NHS card that gives you access to state healthcare across Europe at the same cost as locals. Also useful to have in Australia and New Zealand, though you will still need to register with Medicare and the NDSS separately on arrival.</p>
-<a href="https://www.nhs.uk/using-the-nhs/healthcare-abroad/apply-for-a-free-uk-global-health-insurance-card-ghic/" target="_blank">nhs.uk →</a>
+<a href="https://www.nhs.uk/using-the-nhs/healthcare-abroad/apply-for-a-free-uk-global-health-insurance-card-ghic/" target="_blank" rel="noopener noreferrer">nhs.uk →</a>
 </div>
 
 </div>
@@ -323,27 +325,27 @@ It's the best thing I've ever done. Go do yours.
 <div class="resource-grid">
 
 <div class="resource-card">
-<h4>NDSS guide for visitors to Australia</h4>
+<h3>NDSS guide for visitors to Australia</h3>
 <p>Specific guidance from the NDSS on accessing diabetes supplies and services if you are visiting or moving to Australia from another country.</p>
-<a href="https://www.ndss.com.au/living-with-diabetes/driving-and-travel/visiting-or-moving-to-australia/" target="_blank">ndss.com.au →</a>
+<a href="https://www.ndss.com.au/living-with-diabetes/driving-and-travel/visiting-or-moving-to-australia/" target="_blank" rel="noopener noreferrer">ndss.com.au →</a>
 </div>
 
 <div class="resource-card">
-<h4>NDSS registration</h4>
+<h3>NDSS registration</h3>
 <p>Australia's national diabetes scheme. Register to access subsidised insulin, needles and CGM consumables. Requires Medicare enrolment first.</p>
-<a href="https://www.ndss.com.au/about-the-ndss/registration/" target="_blank">ndss.com.au →</a>
+<a href="https://www.ndss.com.au/about-the-ndss/registration/" target="_blank" rel="noopener noreferrer">ndss.com.au →</a>
 </div>
 
 <div class="resource-card">
-<h4>Medicare enrolment for UK visitors</h4>
+<h3>Medicare enrolment for UK visitors</h3>
 <p>UK visitors covered by the reciprocal healthcare agreement can enrol in Medicare on arrival. Do this as soon as you land.</p>
-<a href="https://www.gov.uk/guidance/uk-reciprocal-healthcare-agreements-with-non-eu-countries" target="_blank">gov.uk →</a>
+<a href="https://www.gov.uk/guidance/uk-reciprocal-healthcare-agreements-with-non-eu-countries" target="_blank" rel="noopener noreferrer">gov.uk →</a>
 </div>
 
 <div class="resource-card">
-<h4>Diabetes Australia</h4>
+<h3>Diabetes Australia</h3>
 <p>Australia's national diabetes organisation. Useful for finding local diabetes teams, support services and information about accessing supplies.</p>
-<a href="https://www.diabetesaustralia.com.au" target="_blank">diabetesaustralia.com.au →</a>
+<a href="https://www.diabetesaustralia.com.au" target="_blank" rel="noopener noreferrer">diabetesaustralia.com.au →</a>
 </div>
 
 </div>
@@ -354,15 +356,15 @@ It's the best thing I've ever done. Go do yours.
 <div class="resource-grid">
 
 <div class="resource-card">
-<h4>Reciprocal healthcare guidance</h4>
+<h3>Reciprocal healthcare guidance</h3>
 <p>New Zealand is covered under the UK reciprocal healthcare agreement. Check GOV.UK for current documentation requirements before travel.</p>
-<a href="https://www.gov.uk/guidance/uk-reciprocal-healthcare-agreements-with-non-eu-countries" target="_blank">gov.uk →</a>
+<a href="https://www.gov.uk/guidance/uk-reciprocal-healthcare-agreements-with-non-eu-countries" target="_blank" rel="noopener noreferrer">gov.uk →</a>
 </div>
 
 <div class="resource-card">
-<h4>Diabetes New Zealand</h4>
+<h3>Diabetes New Zealand</h3>
 <p>New Zealand's national diabetes organisation. Can help with finding local support and understanding what supplies are available in country.</p>
-<a href="https://www.diabetes.org.nz" target="_blank">diabetes.org.nz →</a>
+<a href="https://www.diabetes.org.nz" target="_blank" rel="noopener noreferrer">diabetes.org.nz →</a>
 </div>
 
 </div>
@@ -373,45 +375,45 @@ It's the best thing I've ever done. Go do yours.
 <div class="resource-grid">
 
 <div class="resource-card">
-<h4>Translated medical ID cards</h4>
+<h3>Translated medical ID cards</h3>
 <p>Wallet-sized cards stating you are diabetic and need sugar urgently, available in Thai, Japanese, Korean and 30+ other languages. Ships internationally.</p>
-<a href="https://www.selectwisely.com/products/Diabetes_Type_1_Emergency_Card" target="_blank">selectwisely.com →</a>
+<a href="https://www.selectwisely.com/products/Diabetes_Type_1_Emergency_Card" target="_blank" rel="noopener noreferrer">selectwisely.com →</a>
 </div>
 
 <div class="resource-card">
-<h4>MedicAlert ID bracelet</h4>
+<h3>MedicAlert ID bracelet</h3>
 <p>Internationally recognised medical ID bracelet personalised with your condition, medication and emergency contact details.</p>
-<a href="https://www.medicalert.org.uk" target="_blank">medicalert.org.uk →</a>
+<a href="https://www.medicalert.org.uk" target="_blank" rel="noopener noreferrer">medicalert.org.uk →</a>
 </div>
 
 <div class="resource-card">
-<h4>Dexcom CGM information</h4>
+<h3>Dexcom CGM information</h3>
 <p>Check country-specific availability of Dexcom products before you travel. Product availability varies significantly by region.</p>
-<a href="https://www.dexcom.com" target="_blank">dexcom.com →</a>
+<a href="https://www.dexcom.com" target="_blank" rel="noopener noreferrer">dexcom.com →</a>
 </div>
 
 <div class="resource-card">
-<h4>Abbott Libre CGM information</h4>
+<h3>Abbott Libre CGM information</h3>
 <p>Check regional sensor and app compatibility before travelling. Some regions require a different app version to the one used in the UK.</p>
-<a href="https://www.freestylelibre.co.uk" target="_blank">freestylelibre.co.uk →</a>
+<a href="https://www.freestylelibre.co.uk" target="_blank" rel="noopener noreferrer">freestylelibre.co.uk →</a>
 </div>
 
 <div class="resource-card">
-<h4>Diabetes travel insurance comparison</h4>
+<h3>Diabetes travel insurance comparison</h3>
 <p>Specialist comparison tool for travel insurance with pre-existing conditions. Covers both Type 1 and Type 2. Always declare everything.</p>
-<a href="https://www.medicaltravelcompared.co.uk/travel-insurance/medical/diabetic/" target="_blank">medicaltravelcompared.co.uk →</a>
+<a href="https://www.medicaltravelcompared.co.uk/travel-insurance/medical/diabetic/" target="_blank" rel="noopener noreferrer">medicaltravelcompared.co.uk →</a>
 </div>
 
 <div class="resource-card">
-<h4>AllClear diabetes travel insurance</h4>
+<h3>AllClear diabetes travel insurance</h3>
 <p>Recommended by Diabetes UK. Specialist cover for Type 1 including lost insulin, emergency medical care and repatriation.</p>
-<a href="https://www.allcleartravel.co.uk/medical-conditions/diabetes/" target="_blank">allcleartravel.co.uk →</a>
+<a href="https://www.allcleartravel.co.uk/medical-conditions/diabetes/" target="_blank" rel="noopener noreferrer">allcleartravel.co.uk →</a>
 </div>
 
 <div class="resource-card">
-<h4>Travelling with T1D guide</h4>
+<h3>Travelling with T1D guide</h3>
 <p>Comprehensive travel guidance specifically for Type 1 diabetics, covering preparation, supplies, insurance and managing your condition on the road.</p>
-<a href="https://breakthrought1d.org.au/resources/travelling-with-t1d/" target="_blank">breakthrought1d.org.au →</a>
+<a href="https://breakthrought1d.org.au/resources/travelling-with-t1d/" target="_blank" rel="noopener noreferrer">breakthrought1d.org.au →</a>
 </div>
 
 </div>
