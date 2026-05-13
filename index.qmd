@@ -19,6 +19,11 @@ fontsize: 1.1em
 linestretch: 1.7
 ---
 
+<div class="mobile-github-note">
+  📌 This article is built in Quarto and hosted via GitHub Pages.
+  <a href="https://github.com/tomhbird/tomhbird.github.io" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+</div>
+
 ::: {.column-margin}
 ::: {.sticky-note}
 📌 *This article is written in Quarto and hosted via GitHub Pages. As a Cognitive Neuroscience graduate with a passion for coding, I wanted to use this project to demonstrate what I can do, from clean reproducible document production to custom styling and interactive elements. If you've landed here from my LinkedIn or GitHub, the full source code including the stylesheet is in the repository below.*
@@ -135,10 +140,6 @@ Managing Type 1 diabetes while travelling through some fairly remote parts of th
         <p>Australian Open, Djokovic vs. Basavareddy.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_7919.jpeg" alt="One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes.">
-        <p>One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes.</p>
-      </div>
-      <div class="mobile-gallery-slide">
         <img src="images/compressed_45478592.jpg" alt="Reunion after a very wet and stormy Whitsundays tour.">
         <p>Reunion after a very wet and stormy Whitsundays tour.</p>
       </div>
@@ -181,6 +182,10 @@ Managing Type 1 diabetes while travelling through some fairly remote parts of th
       <div class="mobile-gallery-slide">
         <img src="images/compressed_IMG_7754.jpeg" alt="Mount Fuji doing the heavy lifting in this pic.">
         <p>Mount Fuji doing the heavy lifting in this pic.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_7919.jpeg" alt="One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes.">
+        <p>One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes.</p>
       </div>
     </div>
   </div>

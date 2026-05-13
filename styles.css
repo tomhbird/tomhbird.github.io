@@ -368,10 +368,76 @@ details[open] summary::before {
    ============================================ */
 
 .mobile-gallery {
-  display: none 
+  display: none;
 }
 
+.mobile-github-note {
+  display: none;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
 @media (max-width: 991px) {
+
+  /* Layout */
+  .column-margin {
+    display: none;
+  }
+
+  /* Typography */
+  body {
+    font-size: 0.95em;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    margin-top: 1.2em;
+  }
+
+  #quarto-content p {
+    text-align: left;
+  }
+
+  .quarto-title-block .quarto-title h1 {
+    font-size: 1.6em;
+    line-height: 1.3;
+  }
+
+  /* Boxes */
+  .intro-box, .closing {
+    text-align: left;
+    font-size: 0.97em;
+    line-height: 1.75;
+    padding: 1.4em 1.6em;
+  }
+
+  /* GitHub note */
+  .mobile-github-note {
+    display: block !important;
+    background-color: #fff9c4;
+    border: 1px solid #f0d060;
+    border-radius: 4px;
+    padding: 0.9em 1.2em;
+    margin-bottom: 1.5em;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.88em;
+    line-height: 1.6;
+  }
+
+  .mobile-github-note a {
+    display: block;
+    margin-top: 0.4em;
+    color: #2a9d8f;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  /* Mobile gallery */
   .mobile-gallery {
     display: block !important;
     margin: 1.5em 0 2em 0;
@@ -452,43 +518,4 @@ details[open] summary::before {
   .mobile-gallery-btn:active {
     background-color: #1f7a6e;
   }
-}
-
-/* ============================================
-   RESPONSIVE
-   ============================================ */
-
-@media (max-width: 991px) {
-  .column-margin {
-    display: none;
-  }
-  .mobile-gallery {
-    display: block !important;
-    margin: 1.5em 0 2em 0;
-    background-color: #f5f2ee;
-    border-radius: 8px;
-    border: 3px solid #d4c9b8;
-    overflow: hidden;
-  }
-  
-  h2 {
-    margin-top: 1.2em;
-  }
-  
-  #quarto-content p {
-  text-align: left;
-  body {
-  font-size: 0.95em;
-}
-
-.intro-box, .closing {
-  text-align: left;
-  font-size: 0.97em;
-  line-height: 1.75;
-  padding: 1.4em 1.6em;
-}
-
-.quarto-title-block .quarto-title h1 {
-  font-size: 1.8em;
-  line-height: 1.3;
 }
