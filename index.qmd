@@ -47,8 +47,6 @@ Start ordering as frequently as your prescription allows, at least 6 months befo
 
 ![](images/compressed_IMG_4417.jpeg){description="Australian Open, Djokovic vs. Basavareddy."}
 
-![](images/compressed_IMG_5676.jpeg){description="Australia Zoo."}
-
 ![](images/compressed_IMG_4308.jpeg){description="Coastal hike from Bondi Beach to Manly Beach."}
 
 ![](images/compressed_0CF21C9F.jpg){description="Kokoda Memorial Walk, also known as The Thousand Steps hike. Fair to say we were sweaty messes by the time we got to the top."}
@@ -101,6 +99,10 @@ Start ordering as frequently as your prescription allows, at least 6 months befo
 
 ![](images/compressed_IMG_7919.jpeg){description="One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes."}
 
+<div class="pull-quote">
+Managing Type 1 diabetes while travelling through some fairly remote parts of the world is something to be proud of.
+</div>
+
 ![](images/compressed_IMG_7820.jpeg){description="Mount Fuji really brought out my inner photographer."}
 
 ![](images/compressed_IMG_7415.jpeg){description="How I miss wandering into unassuming restaurants in Japan and getting served an absolute 10/10 meal."}
@@ -133,9 +135,9 @@ Start ordering as frequently as your prescription allows, at least 6 months befo
         <p>Australian Open, Djokovic vs. Basavareddy.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_5676.jpeg" alt="Australia Zoo.">
-        <p>Australia Zoo.</p>
-      </div>
+        <img src="images/compressed_IMG_7919.jpeg" alt="One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes.">
+        <p>One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes.</p>
+</div>
       <div class="mobile-gallery-slide">
         <img src="images/compressed_45478592.jpg" alt="Reunion after a very wet and stormy Whitsundays tour.">
         <p>Reunion after a very wet and stormy Whitsundays tour.</p>
