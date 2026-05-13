@@ -29,7 +29,7 @@ h2 {
 }
 
 p {
-  margin-bottom: 1.4em;
+  margin-bottom: 1em;
   line-height: 1.8;
 }
 
@@ -370,5 +370,8 @@ details[open] summary::before {
    @media (max-width: 768px) {
   .column-margin {
     display: none;
+  }
+  h2 {
+    margin-top: 1.2em;
   }
 }
