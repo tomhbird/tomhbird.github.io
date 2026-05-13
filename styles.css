@@ -473,4 +473,6 @@ details[open] summary::before {
   h2 {
     margin-top: 1.2em;
   }
+  #quarto-content p {
+  text-align: left;
 }
