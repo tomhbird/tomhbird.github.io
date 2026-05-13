@@ -364,19 +364,6 @@ details[open] summary::before {
 }
 
 /* ============================================
-   MOBILE
-   ============================================ */
-   
-   @media (max-width: 768px) {
-  .column-margin {
-    display: none;
-  }
-  h2 {
-    margin-top: 1.2em;
-  }
-}
-
-/* ============================================
    MOBILE GALLERY
    ============================================ */
 
@@ -384,7 +371,7 @@ details[open] summary::before {
   display: none 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .mobile-gallery {
     display: block !important;
     margin: 1.5em 0 2em 0;
@@ -464,5 +451,26 @@ details[open] summary::before {
 
   .mobile-gallery-btn:active {
     background-color: #1f7a6e;
+  }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 991px) {
+  .column-margin {
+    display: none;
+  }
+  .mobile-gallery {
+    display: block !important;
+    margin: 1.5em 0 2em 0;
+    background-color: #f5f2ee;
+    border-radius: 8px;
+    border: 3px solid #d4c9b8;
+    overflow: hidden;
+  }
+  h2 {
+    margin-top: 1.2em;
   }
 }
