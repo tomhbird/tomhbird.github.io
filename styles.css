@@ -381,7 +381,7 @@ details[open] summary::before {
    ============================================ */
 
 .mobile-gallery {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 768px) {
