@@ -29,7 +29,7 @@ h2 {
 }
 
 p {
-  margin-bottom: 1em;
+  margin-bottom: 1.4em;
   line-height: 1.8;
 }
 
@@ -373,5 +373,96 @@ details[open] summary::before {
   }
   h2 {
     margin-top: 1.2em;
+  }
+}
+
+/* ============================================
+   MOBILE GALLERY
+   ============================================ */
+
+.mobile-gallery {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-gallery {
+    display: block;
+    margin: 1.5em 0 2em 0;
+    background-color: #f5f2ee;
+    border-radius: 8px;
+    border: 3px solid #d4c9b8;
+    overflow: hidden;
+  }
+
+  .mobile-gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em 1.2em;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85em;
+    font-weight: 700;
+    color: #1a1a1a;
+    border-bottom: 1px solid #d4c9b8;
+  }
+
+  .mobile-gallery-counter {
+    font-weight: 400;
+    color: #888;
+  }
+
+  .mobile-gallery-track-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .mobile-gallery-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    will-change: transform;
+  }
+
+  .mobile-gallery-slide {
+    min-width: 100%;
+    padding: 1em 1.2em 0.6em 1.2em;
+    box-sizing: border-box;
+  }
+
+  .mobile-gallery-slide img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+    display: block;
+  }
+
+  .mobile-gallery-slide p {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.82em;
+    color: #888;
+    font-style: italic;
+    margin: 0.5em 0 0 0;
+    text-align: left;
+    line-height: 1.4;
+  }
+
+  .mobile-gallery-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em 1.2em;
+  }
+
+  .mobile-gallery-btn {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5em 1.2em;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  .mobile-gallery-btn:active {
+    background-color: #1f7a6e;
   }
 }

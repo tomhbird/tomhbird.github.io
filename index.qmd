@@ -110,8 +110,117 @@ Start ordering as frequently as your prescription allows, at least 6 months befo
 ![](images/compressed_IMG_4336.jpeg){description="Sydney at sunset."}
 
 ![](images/compressed_45478592.jpg){description="Reunion after a very wet and stormy Whitsundays tour."}
-
 :::
+
+<div class="mobile-gallery">
+  <div class="mobile-gallery-header">
+    <span>Photos from the trip</span>
+    <span class="mobile-gallery-counter"><span id="gallery-current">1</span> / 15</span>
+  </div>
+  <div class="mobile-gallery-track-wrapper">
+    <div class="mobile-gallery-track" id="galleryTrack">
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_3634.jpeg" alt="Hiked from the Hollywood sign down to Griffith Observatory.">
+        <p>Hiked from the Hollywood sign down to Griffith Observatory.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_4035.jpeg" alt="Some of the Melbourne family.">
+        <p>Some of the Melbourne family.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_4417.jpeg" alt="Australian Open, Djokovic vs. Basavareddy.">
+        <p>Australian Open, Djokovic vs. Basavareddy.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_5676.jpeg" alt="Australia Zoo.">
+        <p>Australia Zoo.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_45478592.jpg" alt="Reunion after a very wet and stormy Whitsundays tour.">
+        <p>Reunion after a very wet and stormy Whitsundays tour.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_4141.JPG" alt="K'Gari gang, better known as the Dingo Divas.">
+        <p>K'Gari gang, better known as the Dingo Divas.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_5125.jpeg" alt="First glacier. Mount Cook delivered.">
+        <p>First glacier. Mount Cook delivered.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_4651.JPG" alt="Nevis Bungy. After being explicitly told not to jump feet first, I did just that.">
+        <p>Nevis Bungy. After being explicitly told not to jump feet first, I did just that.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_1082.jpeg" alt="Started at 2am, sprained ankle, pitch black, four hours of uphill. Turns out a sunrise at the top of Roy's Peak is worth every single hobbled step.">
+        <p>Started at 2am, sprained ankle, pitch black, four hours of uphill. Turns out a sunrise at the top of Roy's Peak is worth every single hobbled step.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_5861.jpeg" alt="Who would've thought a bucket of mystery spirits and sugar would be a bad idea for a diabetic?">
+        <p>Who would've thought a bucket of mystery spirits and sugar would be a bad idea for a diabetic?</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_6318.jpeg" alt="Vertically climbed a rock face using a dodgy rope to get this pic. Koh Tao was far too pretty.">
+        <p>Vertically climbed a rock face using a dodgy rope to get this pic. Koh Tao was far too pretty.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_6204.jpeg" alt="Fire dancer on Koh Phi Phi. One of those evenings that's hard to describe to someone who wasn't there.">
+        <p>Fire dancer on Koh Phi Phi. One of those evenings that's hard to describe to someone who wasn't there.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_6703.jpeg" alt="What I wouldn't give to do the Ha Giang loop again.">
+        <p>What I wouldn't give to do the Ha Giang loop again.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_7199.jpeg" alt="Vietnamese cooking class in Hoi An.">
+        <p>Vietnamese cooking class in Hoi An.</p>
+      </div>
+      <div class="mobile-gallery-slide">
+        <img src="images/compressed_IMG_7754.jpeg" alt="Mount Fuji doing the heavy lifting in this pic.">
+        <p>Mount Fuji doing the heavy lifting in this pic.</p>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-gallery-controls">
+    <button class="mobile-gallery-btn" id="galleryPrev" aria-label="Previous photo">&#8592;</button>
+    <button class="mobile-gallery-btn" id="galleryNext" aria-label="Next photo">&#8594;</button>
+  </div>
+</div>
+
+<script>
+(function() {
+  var track = document.getElementById('galleryTrack');
+  var prev = document.getElementById('galleryPrev');
+  var next = document.getElementById('galleryNext');
+  var counter = document.getElementById('gallery-current');
+  var current = 0;
+  var total = 15;
+
+  function goTo(index) {
+    if (index < 0) index = total - 1;
+    if (index >= total) index = 0;
+    current = index;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    counter.textContent = current + 1;
+    prev.disabled = false;
+    next.disabled = false;
+  }
+
+  prev.addEventListener('click', function() { goTo(current - 1); });
+  next.addEventListener('click', function() { goTo(current + 1); });
+
+  var startX = 0;
+  track.addEventListener('touchstart', function(e) {
+    startX = e.touches[0].clientX;
+  }, { passive: true });
+  track.addEventListener('touchend', function(e) {
+    var diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) {
+      goTo(diff > 0 ? current + 1 : current - 1);
+    }
+  }, { passive: true });
+})();
+</script>
 
 ::: {.intro-box}
 In October 2024, I finally took the gap year I had been planning since 2020. COVID had other ideas at the time, so I went to university instead and spent four years completing a BSc in Psychology and an MSc in Cognitive Neuroscience. By the time I finished, I was 23 and arguably better equipped for the trip than my 18 year old self ever would have been.
