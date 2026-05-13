@@ -22,7 +22,7 @@ h1 {
 
 h2 {
   font-size: 1.4em;
-  margin-top: 2.5em;
+  margin-top: 1em;
   padding-bottom: 0.3em;
   border-bottom: 2px solid #e8e0d5;
   color: #1a1a1a;
@@ -85,7 +85,7 @@ a:hover {
   background-color: #f5f2ee;
   border-radius: 8px;
   padding: 2em 2.4em;
-  margin: 0.5em 0 1em 0;
+  margin: 0em 0 1em 0;
   font-size: 1.02em;
   line-height: 1.9;
   border: 3px solid #d4c9b8;
@@ -132,7 +132,7 @@ div.callout-tip .callout-body {
   background-color: #f5f2ee;
   border-radius: 8px;
   padding: 2em 2.4em;
-  margin: 3em 0;
+  margin: 1em 0;
   font-size: 1.02em;
   line-height: 1.9;
   border: 3px solid #d4c9b8;
@@ -361,4 +361,14 @@ details[open] summary::before {
 .resource-card a:hover {
   text-decoration: underline;
   color: #1f7a6e;
+}
+
+/* ============================================
+   MOBILE
+   ============================================ */
+   
+   @media (max-width: 768px) {
+  .column-margin {
+    display: none;
+  }
 }
