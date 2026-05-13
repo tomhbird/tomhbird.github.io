@@ -137,7 +137,7 @@ Managing Type 1 diabetes while travelling through some fairly remote parts of th
       <div class="mobile-gallery-slide">
         <img src="images/compressed_IMG_7919.jpeg" alt="One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes.">
         <p>One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes.</p>
-</div>
+      </div>
       <div class="mobile-gallery-slide">
         <img src="images/compressed_45478592.jpg" alt="Reunion after a very wet and stormy Whitsundays tour.">
         <p>Reunion after a very wet and stormy Whitsundays tour.</p>
