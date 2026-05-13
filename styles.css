@@ -470,9 +470,25 @@ details[open] summary::before {
     border: 3px solid #d4c9b8;
     overflow: hidden;
   }
+  
   h2 {
     margin-top: 1.2em;
   }
+  
   #quarto-content p {
   text-align: left;
+  body {
+  font-size: 0.95em;
+}
+
+.intro-box, .closing {
+  text-align: left;
+  font-size: 0.97em;
+  line-height: 1.75;
+  padding: 1.4em 1.6em;
+}
+
+.quarto-title-block .quarto-title h1 {
+  font-size: 1.8em;
+  line-height: 1.3;
 }
