@@ -112,6 +112,7 @@ Start ordering as frequently as your prescription allows, at least 6 months befo
 ![](images/compressed_45478592.jpg){description="Reunion after a very wet and stormy Whitsundays tour."}
 :::
 
+```{=html}
 <div class="mobile-gallery">
   <div class="mobile-gallery-header">
     <span>Photos from the trip</span>
@@ -221,6 +222,7 @@ Start ordering as frequently as your prescription allows, at least 6 months befo
   }, { passive: true });
 })();
 </script>
+```
 
 ::: {.intro-box}
 In October 2024, I finally took the gap year I had been planning since 2020. COVID had other ideas at the time, so I went to university instead and spent four years completing a BSc in Psychology and an MSc in Cognitive Neuroscience. By the time I finished, I was 23 and arguably better equipped for the trip than my 18 year old self ever would have been.
