@@ -381,12 +381,12 @@ details[open] summary::before {
    ============================================ */
 
 .mobile-gallery {
-  display: none !important;
+  display: none 
 }
 
 @media (max-width: 768px) {
   .mobile-gallery {
-    display: block;
+    display: block !important;
     margin: 1.5em 0 2em 0;
     background-color: #f5f2ee;
     border-radius: 8px;
