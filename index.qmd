@@ -1,6 +1,8 @@
 ---
 title: "I've Just Travelled the World as a Type 1 Diabetic. Here Are 10 Things You Should Know."
 author: "Tom Bird"
+description: "Eight months across seven countries with Type 1 diabetes. Here are the ten things I wish someone had told me before I left."
+image: "images/compressed_IMG_1082.jpeg"
 format:
   html:
     theme: journal
@@ -15,6 +17,19 @@ format:
     embed-resources: false
     css: styles.css
     lightbox: true
+    page-layout: article
+    title-block-banner: false
+    include-in-header:
+      text: |
+        <meta property="og:title" content="I've Just Travelled the World as a Type 1 Diabetic. Here Are 10 Things You Should Know.">
+        <meta property="og:description" content="Eight months across seven countries with Type 1 diabetes. Here are the ten things I wish someone had told me before I left.">
+        <meta property="og:image" content="https://tomhbird.github.io/images/compressed_IMG_1082.jpeg">
+        <meta property="og:url" content="https://tomhbird.github.io">
+        <meta property="og:type" content="article">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="I've Just Travelled the World as a Type 1 Diabetic. Here Are 10 Things You Should Know.">
+        <meta name="twitter:description" content="Eight months across seven countries with Type 1 diabetes. Here are the ten things I wish someone had told me before I left.">
+        <meta name="twitter:image" content="https://tomhbird.github.io/images/compressed_IMG_1082.jpeg">
 fontsize: 1.1em
 linestretch: 1.7
 ---
