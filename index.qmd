@@ -31,92 +31,92 @@ linestretch: 1.7
 [View on GitHub →](https://github.com/tomhbird/tomhbird.github.io)
 :::
 
-![](images/compressed_IMG_9567.jpeg){description="Warner Bros Studio tour in LA."}
+![](images/compressed_IMG_9567.jpeg){description="Warner Bros Studio tour in LA." fig-alt="Three people standing outside the Warner Bros Studio entrance in Los Angeles."}
 
-![](images/compressed_IMG_3627.jpeg){description="Trejo's Tacos in The Original Farmers Market, LA."}
+![](images/compressed_IMG_3627.jpeg){description="Trejo's Tacos in The Original Farmers Market, LA." fig-alt="A spread of tacos and Mexican food on a table at Trejo's Tacos in the Original Farmers Market, Los Angeles."}
 
 <div class="pull-quote">
 Start ordering as frequently as your prescription allows, at least 6 months before you leave.
 </div>
 
-![](images/compressed_IMG_3634.jpeg){description="Hiked from the Hollywood sign down to Griffith Observatory."}
+![](images/compressed_IMG_3634.jpeg){description="Hiked from the Hollywood sign down to Griffith Observatory." fig-alt="The Hollywood sign on a hillside in Los Angeles on a clear blue sky day."}
 
-![](images/compressed_IMG_4035.jpeg){description="Some of the Melbourne family."}
+![](images/compressed_IMG_4035.jpeg){description="Some of the Melbourne family." fig-alt="A group of friends smiling together in Melbourne, Australia."}
 
 <div class="fact-box">
 <span class="fact-number">$190 AUD</span>
 <span class="fact-label">Cost of a single box of insulin without Medicare. With it: $30 to $35.</span>
 </div>
 
-![](images/compressed_IMG_4162.jpeg){description="Australian Christmas dinner, made from scratch. Not quite the classic roast we're used to in the UK, but a close second."}
+![](images/compressed_IMG_4162.jpeg){description="Australian Christmas dinner, made from scratch. Not quite the classic roast we're used to in the UK, but a close second." fig-alt="A homemade Christmas dinner spread, consisting of a couscous salad, a green salad, barbecued chicken, and cherries, on a table in Australia."}
 
-![](images/compressed_IMG_4417.jpeg){description="Australian Open, Djokovic vs. Basavareddy."}
+![](images/compressed_IMG_4417.jpeg){description="Australian Open, Djokovic vs. Basavareddy." fig-alt="A tennis match in progress at the Australian Open with the court and crowd visible, and a sunset behind."}
 
-![](images/compressed_IMG_4308.jpeg){description="Coastal hike from Bondi Beach to Manly Beach."}
+![](images/compressed_IMG_4308.jpeg){description="Coastal hike from Bondi Beach to Manly Beach." fig-alt="A coastal view along the cliffs between Bondi Beach and Manly Beach in Sydney."}
 
-![](images/compressed_0CF21C9F.jpg){description="Kokoda Memorial Walk, also known as The Thousand Steps hike. Fair to say we were sweaty messes by the time we got to the top."}
+![](images/compressed_0CF21C9F.jpg){description="Kokoda Memorial Walk, also known as The Thousand Steps hike. Fair to say we were sweaty messes by the time we got to the top." fig-alt="A group of people at the top of the Kokoda Memorial Walk, also known as the Thousand Steps hike, in Melbourne."}
 
-![](images/compressed_IMG_4699.jpeg){description="The dreaded butane gas stove."}
+![](images/compressed_IMG_4699.jpeg){description="The dreaded butane gas stove." fig-alt="Two people cooking on a small portable butane gas stove while camping in New Zealand."}
 
-![](images/compressed_IMG_7199.jpeg){description="Vietnamese cooking class in Hoi An."}
+![](images/compressed_IMG_7199.jpeg){description="Vietnamese cooking class in Hoi An." fig-alt="A spread of Vietnamese dishes prepared during a cooking class in Hoi An, Vietnam."}
 
-![](images/compressed_IMG_5861.jpeg){description="Who would've thought a bucket of mystery spirits and sugar would be a bad idea for a diabetic?"}
+![](images/compressed_IMG_5861.jpeg){description="Who would've thought a bucket of mystery spirits and sugar would be a bad idea for a diabetic?" fig-alt="Two people drinking out of a Thai bucket cocktail with straws on the Khao San Road in Bangkok, Thailand."}
 
-![](images/compressed_8090b546.jpg){description="Hoi An was far too fun."}
+![](images/compressed_8090b546.jpg){description="Hoi An was far too fun." fig-alt="A group of people posing in a bar in Hoi An."}
 
-![](images/compressed_IMG_5125.jpeg){description="First glacier. Mount Cook delivered."}
+![](images/compressed_IMG_5125.jpeg){description="First glacier. Mount Cook delivered." fig-alt="A glacier and snow covered peaks at Mount Cook New Zealand."}
 
-![](images/compressed_IMG_4651.JPG){description="My surname isn't Bird for nothing. After being explicitly told not to jump feet first, I did just that! Nevis Bungy, you sure did have my legs trembling."}
+![](images/compressed_IMG_4651.JPG){description="My surname isn't Bird for nothing. After being explicitly told not to jump feet first, I did just that! Nevis Bungy, you sure did have my legs trembling." fig-alt="A person mid-jump on the Nevis Bungy in Queenstown, New Zealand, one of the highest bungee jumps in the world."}
 
-![](images/compressed_IMG_6318.jpeg){description="Vertically climbed a rock face using a dodgy rope to get this pic. Koh Tao was far too pretty."}
+![](images/compressed_IMG_6318.jpeg){description="Vertically climbed a rock face using a dodgy rope to get this pic. Koh Tao was far too pretty." fig-alt="A scenic view of the turquoise waters and coastline of Koh Tao island in Thailand."}
 
-![](images/compressed_IMG_6703.jpeg){description="What I wouldn't give to do the Ha Giang loop again."}
+![](images/compressed_IMG_6703.jpeg){description="What I wouldn't give to do the Ha Giang loop again." fig-alt="A winding road in a valley of the Ha Giang loop"}
 
-![](images/compressed_IMG_7754.jpeg){description="Mount Fuji doing the heavy lifting in this pic."}
+![](images/compressed_IMG_7754.jpeg){description="Mount Fuji doing the heavy lifting in this pic." fig-alt="A person looking toward Mount Fuji on a clear day in Japan."}
 
-![](images/compressed_IMG_6963.jpeg){description="The meals at the homestays in Vietnam were always the best."}
+![](images/compressed_IMG_6963.jpeg){description="The meals at the homestays in Vietnam were always the best." fig-alt="A spread of traditional Vietnamese dishes served at a homestay on the Ha Giang loop."}
 
-![](images/compressed_IMG_6857.jpeg){description="The views from the loop genuinely never get old."}
+![](images/compressed_IMG_6857.jpeg){description="The views from the loop genuinely never get old." fig-alt="Grassy mountain views from the Ha Giang loop in northern Vietnam."}
 
-![](images/compressed_IMG_0933.jpeg){description="Early days of camping in New Zealand, before the reality of 3 boys living out of a car hit."}
+![](images/compressed_IMG_0933.jpeg){description="Early days of camping in New Zealand, before the reality of 3 boys living out of a car hit." fig-alt="A sunset in New Zealand in the early days of a road trip with two people, tents and, a car visible."}
 
 <div class="fact-box">
 <span class="fact-number">Don't put insulin in the hold</span>
 <span class="fact-label">Cargo holds can drop to temperatures that will freeze and destroy your supply.</span>
 </div>
 
-![](images/compressed_IMG_7437.jpeg){description="Many a torii was visited."}
+![](images/compressed_IMG_7437.jpeg){description="Many a torii was visited." fig-alt="A row of red torii gates at a Shinto Shrine in Japan."}
 
-![](images/compressed_IMG_5175.jpeg){description="Sadly this wasn't our tent. Instead, ours was £20 off FB marketplace and had very little structural integrity."}
+![](images/compressed_IMG_5175.jpeg){description="Sadly this wasn't our tent. Instead, ours was £20 off FB marketplace and had very little structural integrity." fig-alt="A rainbow with a tent infront of it, with a mountain behind."}
 
-![](images/compressed_IMG_7557.jpeg){description="Japanese architecture combined with its landscape is unrivalled."}
+![](images/compressed_IMG_7557.jpeg){description="Japanese architecture combined with its landscape is unrivalled." fig-alt="Traditional Japanese architecture set against a forested hillside and clear sky."}
 
 <div class="fact-box">
 <span class="fact-number">17 hours</span>
 <span class="fact-label">The hardest time zone shift of the trip. Los Angeles to Melbourne.</span>
 </div>
 
-![](images/compressed_IMG_6204.jpeg){description="Fire dancer on Koh Phi Phi. One of those evenings that's hard to describe to someone who wasn't there."}
+![](images/compressed_IMG_6204.jpeg){description="Fire dancer on Koh Phi Phi. One of those evenings that's hard to describe to someone who wasn't there." fig-alt="A fire dancer spinning fire on a beach on Koh Phi Phi in Thailand at night."}
 
-![](images/compressed_IMG_4141.JPG){description="K'Gari gang, better known as the Dingo Divas."}
+![](images/compressed_IMG_4141.JPG){description="K'Gari gang, better known as the Dingo Divas." fig-alt="A group of people posing together on a gar on K'Gari, formerly Fraser Island, in Queensland, Australia."}
 
-![](images/compressed_IMG_6363.jpeg){description="Thai sunsets were unmatched."}
+![](images/compressed_IMG_6363.jpeg){description="Thai sunsets were unmatched." fig-alt="A vivid orange and pink sunset over the sea in Thailand."}
 
-![](images/compressed_IMG_7919.jpeg){description="One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes."}
+![](images/compressed_IMG_7919.jpeg){description="One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes." fig-alt="A table of fusion dishes combining South Korean cuisine with international influences, one of the final meals of the trip."}
 
 <div class="pull-quote">
 Managing Type 1 diabetes while travelling through some fairly remote parts of the world is something to be proud of.
 </div>
 
-![](images/compressed_IMG_7820.jpeg){description="Mount Fuji really brought out my inner photographer."}
+![](images/compressed_IMG_7820.jpeg){description="Mount Fuji really brought out my inner photographer." fig-alt="A close up of blue flowers with a view of Mount Fuji and its snow capped peak behind."}
 
-![](images/compressed_IMG_7415.jpeg){description="How I miss wandering into unassuming restaurants in Japan and getting served an absolute 10/10 meal."}
+![](images/compressed_IMG_7415.jpeg){description="How I miss wandering into unassuming restaurants in Japan and getting served an absolute 10/10 meal." fig-alt="A diverse Japanese meal served in a small restaurant in Japan."}
 
-![](images/compressed_IMG_1082.jpeg){description="Started at 2am, sprained ankle, pitch black, four hours of uphill. Turns out a sunrise at the top of Roy's Peak is worth every single hobbled step."}
+![](images/compressed_IMG_1082.jpeg){description="Started at 2am, sprained ankle, pitch black, four hours of uphill. Turns out a sunrise at the top of Roy's Peak is worth every single hobbled step." fig-alt="Three people posing infront of a sunrise view from the summit of Roy's Peak in Wanaka, New Zealand, with golden light over the mountains and lake."}
 
-![](images/compressed_IMG_4336.jpeg){description="Sydney at sunset."}
+![](images/compressed_IMG_4336.jpeg){description="Sydney at sunset." fig-alt="A sunset view of the Sydney skyline with an orange sky behind the buildings."}
 
-![](images/compressed_45478592.jpg){description="Reunion after a very wet and stormy Whitsundays tour."}
+![](images/compressed_45478592.jpg){description="Reunion after a very wet and stormy Whitsundays tour." fig-alt="A group of friends reunited and smiling after a stormy Whitsundays boat tour in Queensland, Australia."}
 :::
 
 ```{=html}
@@ -128,63 +128,63 @@ Managing Type 1 diabetes while travelling through some fairly remote parts of th
   <div class="mobile-gallery-track-wrapper">
     <div class="mobile-gallery-track" id="galleryTrack">
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_3634.jpeg" alt="Hiked from the Hollywood sign down to Griffith Observatory.">
+        <img src="images/compressed_IMG_3634.jpeg" alt="The Hollywood sign on a hillside in Los Angeles on a clear blue sky day.">
         <p>Hiked from the Hollywood sign down to Griffith Observatory.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_4035.jpeg" alt="Some of the Melbourne family.">
+        <img src="images/compressed_IMG_4035.jpeg" alt="A group of friends smiling together in Melbourne, Australia.">
         <p>Some of the Melbourne family.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_4417.jpeg" alt="Australian Open, Djokovic vs. Basavareddy.">
+        <img src="images/compressed_IMG_4417.jpeg" alt="A tennis match in progress at the Australian Open with the court and crowd visible, and a sunset behind.">
         <p>Australian Open, Djokovic vs. Basavareddy.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_45478592.jpg" alt="Reunion after a very wet and stormy Whitsundays tour.">
+        <img src="images/compressed_45478592.jpg" alt="A group of friends reunited and smiling after a stormy Whitsundays boat tour in Queensland, Australia.">
         <p>Reunion after a very wet and stormy Whitsundays tour.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_4141.JPG" alt="K'Gari gang, better known as the Dingo Divas.">
+        <img src="images/compressed_IMG_4141.JPG" alt="A group of people posing together on a gar on K'Gari, formerly Fraser Island, in Queensland, Australia.">
         <p>K'Gari gang, better known as the Dingo Divas.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_5125.jpeg" alt="First glacier. Mount Cook delivered.">
+        <img src="images/compressed_IMG_5125.jpeg" alt="A glacier and snow covered peaks at Mount Cook New Zealand.">
         <p>First glacier. Mount Cook delivered.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_4651.JPG" alt="Nevis Bungy. After being explicitly told not to jump feet first, I did just that.">
+        <img src="images/compressed_IMG_4651.JPG" alt="A person mid-jump on the Nevis Bungy in Queenstown, New Zealand, one of the highest bungee jumps in the world.">
         <p>Nevis Bungy. After being explicitly told not to jump feet first, I did just that.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_1082.jpeg" alt="Started at 2am, sprained ankle, pitch black, four hours of uphill. Turns out a sunrise at the top of Roy's Peak is worth every single hobbled step.">
+        <img src="images/compressed_IMG_1082.jpeg" alt="Three people posing infront of a sunrise view from the summit of Roy's Peak in Wanaka, New Zealand, with golden light over the mountains and lake.">
         <p>Started at 2am, sprained ankle, pitch black, four hours of uphill. Turns out a sunrise at the top of Roy's Peak is worth every single hobbled step.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_5861.jpeg" alt="Who would've thought a bucket of mystery spirits and sugar would be a bad idea for a diabetic?">
+        <img src="images/compressed_IMG_5861.jpeg" alt="Two people drinking out of a Thai bucket cocktail with straws on the Khao San Road in Bangkok, Thailand.">
         <p>Who would've thought a bucket of mystery spirits and sugar would be a bad idea for a diabetic?</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_6318.jpeg" alt="Vertically climbed a rock face using a dodgy rope to get this pic. Koh Tao was far too pretty.">
+        <img src="images/compressed_IMG_6318.jpeg" alt="A scenic view of the turquoise waters and coastline of Koh Tao island in Thailand.">
         <p>Vertically climbed a rock face using a dodgy rope to get this pic. Koh Tao was far too pretty.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_6204.jpeg" alt="Fire dancer on Koh Phi Phi. One of those evenings that's hard to describe to someone who wasn't there.">
+        <img src="images/compressed_IMG_6204.jpeg" alt="A fire dancer spinning fire on a beach on Koh Phi Phi in Thailand at night.">
         <p>Fire dancer on Koh Phi Phi. One of those evenings that's hard to describe to someone who wasn't there.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_6703.jpeg" alt="What I wouldn't give to do the Ha Giang loop again.">
+        <img src="images/compressed_IMG_6703.jpeg" alt="A winding road in a valley of the Ha Giang loop">
         <p>What I wouldn't give to do the Ha Giang loop again.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_7199.jpeg" alt="Vietnamese cooking class in Hoi An.">
+        <img src="images/compressed_IMG_7199.jpeg" alt="A spread of Vietnamese dishes prepared during a cooking class in Hoi An, Vietnam.">
         <p>Vietnamese cooking class in Hoi An.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_7754.jpeg" alt="Mount Fuji doing the heavy lifting in this pic.">
+        <img src="images/compressed_IMG_7754.jpeg" alt="A person looking toward Mount Fuji on a clear day in Japan.">
         <p>Mount Fuji doing the heavy lifting in this pic.</p>
       </div>
       <div class="mobile-gallery-slide">
-        <img src="images/compressed_IMG_7919.jpeg" alt="One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes.">
+        <img src="images/compressed_IMG_7919.jpeg" alt="A table of fusion dishes combining South Korean cuisine with international influences, one of the final meals of the trip.">
         <p>One of our last meals of the trip. The chef combined his knowledge of South Korean cuisine with his travels to create some insanely delicious fusion dishes.</p>
       </div>
     </div>
