@@ -1,7 +1,6 @@
 ---
 title: "I've Just Travelled the World as a Type 1 Diabetic. Here Are 10 Things You Should Know."
 author: "Tom Bird"
-description: "Eight months across seven countries with Type 1 diabetes. Here are the ten things I wish someone had told me before I left."
 image: "images/compressed_IMG_1082.jpeg"
 format:
   html:
