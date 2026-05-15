@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>map</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="map_files/libs/clipboard/clipboard.min.js"></script>
+<script src="map_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="map_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="map_files/libs/quarto-html/popper.min.js"></script>
+<script src="map_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="map_files/libs/quarto-html/anchor.min.js"></script>
+<link href="map_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="map_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="map_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="map_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="map_files/libs/bootstrap/bootstrap-d4791fd432f8730d65180f3796899ee9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-full">
+
+<main class="content column-page" id="quarto-document-content">
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<style>
+* { box-sizing: border-box; }
+
+.map-hero {
+  background: linear-gradient(135deg, #f5f2ee 0%, #ede8e0 100%);
+  border-bottom: 2px solid #d4c9b8;
+  padding: 2em 2em 1.5em 2em;
+  margin-bottom: 0;
+}
+
+.map-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.map-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  background: #2a9d8f;
+  color: white;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.82em;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.4em 0.9em;
+  border-radius: 4px;
+  border: none;
+  margin: 1.5em 0 0.8em 2em;
+  transition: all 0.2s;
+}
+
+.map-back:hover {
+  background: #1f7a6e;
+  color: white;
+}
+
+.map-hero-title-bar {
+  border-left: 4px solid #2a9d8f;
+  padding-left: 0.8em;
+  margin-bottom: 0.6em;
+}
+
+.map-hero h1 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.9em;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.map-hero p {
+  font-family: 'Georgia', serif;
+  font-size: 0.95em;
+  line-height: 1.7;
+  color: #555;
+  margin: 0.6em 0 0 0;
+  max-width: 720px;
+}
+
+.map-stats {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.2em;
+  flex-wrap: wrap;
+}
+
+.map-stat {
+  background: white;
+  border: 1px solid #d4c9b8;
+  border-radius: 8px;
+  padding: 0.7em 1.4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90px;
+}
+
+.map-stat-number {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #2a9d8f;
+  line-height: 1;
+}
+
+.map-stat-label {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.72em;
+  color: #888;
+  margin-top: 0.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.map-controls {
+  max-width: 1100px;
+  margin: 1.2em auto 0 auto;
+  padding: 0.8em 2em;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  background: white;
+  border-bottom: 1px solid #e8e0d5;
+  border-top: 3px solid #e8e0d5;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 1.4em;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.78em;
+  color: #555;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.legend-line {
+  width: 24px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.map-note {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.78em;
+  color: #888;
+  margin-left: auto;
+}
+
+.map-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2em 2em 2em;
+}
+
+#map {
+  width: 100%;
+  height: 560px;
+  border-radius: 0 0 10px 10px;
+  border: 2px solid #d4c9b8;
+  border-top: none;
+}
+
+.cards-section {
+  display: none;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2em 2em 2em;
+}
+
+.cards-section.visible { display: block; }
+
+.country-card {
+  background: white;
+  border: 2px solid #e8e0d5;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1.2em 1.6em;
+  background: linear-gradient(135deg, #f5f2ee 0%, #ede8e0 100%);
+  border-bottom: 2px solid #e8e0d5;
+}
+
+.card-flag { font-size: 2.4em; }
+
+.card-country {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.card-tagline {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  color: #888;
+  font-size: 0.9em;
+  margin-top: 0.15em;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-left {
+  padding: 1.6em;
+  border-right: 1px solid #e8e0d5;
+}
+
+.card-right { padding: 1.6em; }
+
+.card-section-title {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #2a9d8f;
+  margin-bottom: 1em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid #e8e0d5;
+}
+
+.food-item { margin-bottom: 0.8em; }
+
+.food-label {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.72em;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.food-value {
+  font-family: 'Georgia', serif;
+  font-size: 0.9em;
+  color: #3a3a3a;
+  line-height: 1.5;
+}
+
+.practical-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #f0ece4;
+  font-size: 0.85em;
+}
+
+.practical-row:last-child { border-bottom: none; }
+.practical-label { font-family: 'Helvetica Neue', Arial, sans-serif; color: #555; }
+.practical-value { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; color: #1a1a1a; }
+.practical-value.high { color: #c0392b; }
+.practical-value.yes { color: #2a9d8f; }
+.practical-value.no { color: #c0392b; }
+.dots { color: #2a9d8f; letter-spacing: 2px; }
+.dots-empty { color: #d4c9b8; letter-spacing: 2px; }
+
+.headsup {
+  background: #f0f7f4;
+  border-left: 3px solid #2a9d8f;
+  border-radius: 0 6px 6px 0;
+  padding: 0.9em 1.1em;
+  margin-top: 1.2em;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.83em;
+  color: #3a3a3a;
+  line-height: 1.6;
+}
+
+.headsup strong { color: #1a1a1a; }
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  background: #f5f2ee;
+  color: #2a9d8f;
+  border: 1px solid #d4c9b8;
+  border-radius: 6px;
+  padding: 0.6em 1.2em;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.85em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1.2em;
+  transition: all 0.2s;
+}
+
+.back-btn:hover { background: #2a9d8f; color: white; border-color: #2a9d8f; }
+
+.leaflet-popup-content-wrapper {
+  border-radius: 10px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  border: 1px solid #e8e0d5;
+}
+
+.leaflet-popup-content {
+  margin: 1em 1.1em;
+  font-size: 0.85em;
+  min-width: 200px;
+}
+
+.popup-country { font-weight: 700; font-size: 1.05em; color: #1a1a1a; margin-bottom: 0.2em; }
+.popup-tagline { font-style: italic; color: #888; margin-bottom: 0.7em; font-size: 0.85em; line-height: 1.4; }
+.popup-row { display: flex; justify-content: space-between; gap: 1em; margin-bottom: 0.25em; color: #3a3a3a; font-size: 0.9em; }
+.popup-row span:last-child { font-weight: 700; }
+.popup-high { color: #c0392b; }
+.popup-yes { color: #2a9d8f; }
+.popup-no { color: #c0392b; }
+.popup-divider { border: none; border-top: 1px solid #e8e0d5; margin: 0.7em 0; }
+.popup-link {
+  display: block;
+  margin-top: 0.7em;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.85em;
+  text-align: center;
+  background: #2a9d8f;
+  border-radius: 5px;
+  padding: 0.5em;
+  transition: background 0.2s;
+}
+.popup-link:hover { background: #1f7a6e; }
+
+@media (max-width: 700px) {
+  .map-hero { padding: 1.2em; }
+  .map-hero h1 { font-size: 1.3em; }
+  .map-controls { padding: 0.6em 1em; gap: 0.8em; }
+  .map-note { margin-left: 0; }
+  .map-wrapper { padding: 0 0 1.5em 0; }
+  .cards-section { padding: 0 1em 1.5em 1em; }
+  #map { height: 380px; border-radius: 0; }
+  .card-body { grid-template-columns: 1fr; }
+  .card-left { border-right: none; border-bottom: 1px solid #e8e0d5; }
+  .map-stats { gap: 0.6em; }
+  .map-stat { min-width: 70px; padding: 0.5em 0.8em; }
+}
+</style>
+
+  <a href="index.html" class="map-back">← Back to article</a>
+
+<div class="map-hero">
+  <div class="map-hero-inner">
+    <div class="map-hero-title-bar">
+      <h1>The Route and Country Guide: Travelling the World with Type 1 Diabetes</h1>
+    </div>
+    <p>Eight months across the US, Australia, New Zealand, Thailand, Vietnam, Japan, and South Korea. Click any country marker to see what the food is like for a Type 1 diabetic, how easy it is to access insulin and CGM supplies, and what you need to know before you go.</p>
+  </div>
+</div>
+
+<div class="map-controls">
+  <div class="legend">
+    <div class="legend-item"><div class="legend-line" style="background:#2a9d8f"></div>Flying</div>
+    <div class="legend-item"><div class="legend-line" style="background:#e9a84c"></div>Driving</div>
+    <div class="legend-item"><div class="legend-line" style="background:#e07b6b"></div>Bus</div>
+    <div class="legend-item"><div class="legend-line" style="background:#5b7fa6"></div>Ferry</div>
+    <div class="legend-item"><div class="legend-line" style="background:#8b6fb5"></div>Train</div>
+  </div>
+  <div class="map-note">● Red markers are clickable</div>
+</div>
+
+<div class="map-wrapper">
+  <div id="map"></div>
+</div>
+
+<div class="cards-section" id="cardsSection">
+  <button class="back-btn" onclick="closeCard()">← Back to map</button>
+  <div id="cardContent"></div>
+</div>
+
+<script>
+var map = L.map('map', {
+  zoomControl: true,
+  scrollWheelZoom: true,
+  minZoom: 2,
+  maxBounds: [[-90, -180], [90, 180]],
+  maxBoundsViscosity: 1.0
+}).setView([20, 60], 2);
+
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  attribution: '© OpenStreetMap contributors © CARTO',
+  subdomains: 'abcd',
+  maxZoom: 10,
+  noWrap: true
+}).addTo(map);
+
+var countries = {
+  usa: {
+    flag: '🇺🇸', name: 'United States',
+    tagline: 'Every portion is a maths problem and every label lies, but you have never eaten better in your life.',
+    foods: [
+      { label: 'The staple', value: 'Burgers, BBQ, breakfast diners, pizza, tacos' },
+      { label: 'Sneaky sugar', value: 'High fructose corn syrup in everything including bread and condiments. Diner pancake stacks.' },
+      { label: 'Eat freely', value: 'Eggs and bacon, grilled meats, steakhouse cuts, Caesar salad, BBQ brisket without sauce' },
+      { label: 'Worth the spike', value: 'New York pizza, cheesecake, In-N-Out burger, American diner pancakes, key lime pie' },
+      { label: 'Best spot', value: 'Time Out Market New York' },
+      { label: 'Favourite meal', value: 'Classic New York pizza slice' }
+    ],
+    practical: { insulin: 5, cgm: 5, english: 5, deal: { value: 'No', cls: 'no' }, timezone: '-5 to -8h', heat: { value: 'Varies by region', cls: '' } },
+    headsup: 'Sort your travel insurance before anything else and confirm it covers Type 1 diabetes explicitly. A single hospital visit without it could cost tens of thousands of dollars. Do not trust any carb estimate on a restaurant menu.'
+  },
+  australia: {
+    flag: '🇦🇺', name: 'Australia',
+    tagline: 'Brunch culture is brilliant. The smoothies will catch you out.',
+    foods: [
+      { label: 'The staple', value: 'Chicken parm, brunch, sourdough, açaí bowls' },
+      { label: 'Sneaky sugar', value: 'Smoothies, flavoured yoghurts, açaí bowls loaded with honey and granola' },
+      { label: 'Eat freely', value: 'Steak, seafood, salads' },
+      { label: 'Worth the spike', value: 'Tim Tams, Solo, Woolworths muffins' },
+      { label: 'Best spot', value: "Sam's Cali Cantina" },
+      { label: 'Favourite meal', value: 'Big Aussie brunch with smashed avo and all the sides' }
+    ],
+    practical: { insulin: 5, cgm: 4, english: 5, deal: { value: 'Yes, Medicare', cls: 'yes' }, timezone: '+7 to +11h', heat: { value: 'Moderate', cls: '' } },
+    headsup: 'Medicare and NDSS take 6 to 8 weeks to set up. The UK Libre app does not work with Australian sensors. Switch your phone app store region before you arrive.'
+  },
+  newzealand: {
+    flag: '🇳🇿', name: 'New Zealand',
+    tagline: 'Clean and hearty, but the healthcare access takes patience.',
+    foods: [
+      { label: 'The staple', value: 'Meat pies, beef, pasta' },
+      { label: 'Sneaky sugar', value: 'Flavoured water and sports drinks on hikes, meat pie glazes, supermarket pasta sauces' },
+      { label: 'Eat freely', value: 'Beef, salads' },
+      { label: 'Worth the spike', value: 'Natural Sour squirms' },
+      { label: 'Best spot', value: 'Soul Bar and Bistro, Auckland' },
+      { label: 'Favourite meal', value: 'Tuna and sweetcorn pasta, made by us on the gas stove' }
+    ],
+    practical: { insulin: 3, cgm: 3, english: 5, deal: { value: 'Yes', cls: 'yes' }, timezone: '+12 to +13h', heat: { value: 'Low to moderate', cls: '' } },
+    headsup: 'Reciprocal agreement exists but registering takes longer than Australia and supply access is more limited. Research what you need before you arrive rather than figuring it out on the ground.'
+  },
+  thailand: {
+    flag: '🇹🇭', name: 'Thailand',
+    tagline: 'Sugar hides in everything.',
+    foods: [
+      { label: 'The staple', value: 'Sticky rice, Massaman, Panang curry' },
+      { label: 'Sneaky sugar', value: 'Palm sugar in curries, fresh fruit everywhere, Thai buckets' },
+      { label: 'Eat freely', value: 'Tom yum, chicken satay skewers' },
+      { label: 'Worth the spike', value: 'Mango sticky rice, Massaman, chocolate lava cake from 7-Eleven' },
+      { label: 'Best spot', value: 'Ao Nang Night Market' },
+      { label: 'Favourite meal', value: 'Chicken Massaman curry' }
+    ],
+    practical: { insulin: 2, cgm: 2, english: 3, deal: { value: 'No', cls: 'no' }, timezone: '+6 to +7h', heat: { value: 'High', cls: 'high' } },
+    headsup: 'Bring enough stock to get through your travels. Finding insulin and CGMs out here should be a last resort, not a plan. Thai buckets will ruin your readings. Stick to beer or soju.'
+  },
+  vietnam: {
+    flag: '🇻🇳', name: 'Vietnam',
+    tagline: 'The cleanest food on the trip. The coffee will absolutely floor you.',
+    foods: [
+      { label: 'The staple', value: 'Summer rolls, bun cha, banh mi, pho' },
+      { label: 'Sneaky sugar', value: 'Condensed milk coffee including egg coffee and coconut coffee, banh mi sauces' },
+      { label: 'Eat freely', value: 'Pho with clear broth, grilled meats' },
+      { label: 'Worth the spike', value: 'Vietnamese coffee, banh mi' },
+      { label: 'Best spot', value: 'Madam Khanh, The Banh Mi Queen, Hoi An' },
+      { label: 'Favourite meal', value: 'Bun cha' }
+    ],
+    practical: { insulin: 2, cgm: 1, english: 3, deal: { value: 'No', cls: 'no' }, timezone: '+6h', heat: { value: 'High', cls: 'high' } },
+    headsup: 'Bring every sensor and vial you need, full stop. The street food culture is incredible but portions and ingredients are unpredictable. Test more frequently than you think you need to.'
+  },
+  japan: {
+    flag: '🇯🇵', name: 'Japan',
+    tagline: 'Every meal is extraordinary. Every label is a trap.',
+    foods: [
+      { label: 'The staple', value: 'Rice, ramen, sushi, tempura, onigiri' },
+      { label: 'Sneaky sugar', value: 'Mirin and teriyaki glazes, convenience store onigiri, Japanese curry roux, vending machine drinks, mochi' },
+      { label: 'Eat freely', value: 'Sashimi, edamame, miso soup, tofu dishes' },
+      { label: 'Worth the spike', value: 'Ramen, tonkatsu, mochi ice cream, convenience store cheesecake' },
+      { label: 'Best spot', value: "Any unassuming side street restaurant that looks like someone's house" },
+      { label: 'Favourite meal', value: 'Kataya, Kyoto' }
+    ],
+    practical: { insulin: 3, cgm: 2, english: 3, deal: { value: 'No', cls: 'no' }, timezone: '+8 to +9h', heat: { value: 'Moderate to high', cls: '' } },
+    headsup: "Japan's convenience store culture is a genuine trap. Almost everything packaged has hidden sugar or starch. Carry your own snacks and never assume something is safe because it looks small."
+  },
+  southkorea: {
+    flag: '🇰🇷', name: 'South Korea',
+    tagline: 'Korean BBQ is your best friend. The sauces are not.',
+    foods: [
+      { label: 'The staple', value: 'Rice, Korean BBQ, kimchi, bibimbap, ramyeon' },
+      { label: 'Sneaky sugar', value: 'Gochujang and doenjang sauces, japchae glass noodles, Korean fried chicken glazes' },
+      { label: 'Eat freely', value: 'Korean BBQ unsauced meats, kimchi, doenjang jjigae, namul vegetable sides, grilled fish' },
+      { label: 'Worth the spike', value: 'Korean fried chicken, bibimbap, hotteok, bingsu' },
+      { label: 'Best spot', value: 'Hangong-Gan, Mapu-gu, Seoul' },
+      { label: 'Favourite meal', value: 'Korean fried chicken' }
+    ],
+    practical: { insulin: 3, cgm: 2, english: 3, deal: { value: 'No', cls: 'no' }, timezone: '+8 to +9h', heat: { value: 'Moderate', cls: '' } },
+    headsup: 'The banchan culture means you will be presented with ten small dishes before you have even ordered. Learn which ones are safe and which are loaded with sugar sauces before you sit down.'
+  }
+};
+
+function dots(n) {
+  return '<span class="dots">' + '●'.repeat(n) + '</span><span class="dots-empty">' + '●'.repeat(5-n) + '</span>';
+}
+
+function popupHTML(key) {
+  var c = countries[key];
+  var hcls = c.practical.heat.cls ? ' class="popup-' + c.practical.heat.cls + '"' : '';
+  return '<div class="popup-country">' + c.flag + ' ' + c.name + '</div>' +
+    '<div class="popup-tagline">' + c.tagline + '</div>' +
+    '<hr class="popup-divider">' +
+    '<div class="popup-row"><span>Heat risk</span><span' + hcls + '>' + c.practical.heat.value + '</span></div>' +
+    '<div class="popup-row"><span>Time zone vs UK</span><span>' + c.practical.timezone + '</span></div>' +
+    '<div class="popup-row"><span>Healthcare deal</span><span class="popup-' + c.practical.deal.cls + '">' + c.practical.deal.value + '</span></div>' +
+    '<div class="popup-link" onclick="showCard(\'' + key + '\')">Full country guide →</div>';
+}
+
+function showCard(key) {
+  var c = countries[key];
+  map.closePopup();
+  var html = '<div class="country-card">' +
+    '<div class="card-header"><span class="card-flag">' + c.flag + '</span>' +
+    '<div><div class="card-country">' + c.name + '</div>' +
+    '<div class="card-tagline">' + c.tagline + '</div></div></div>' +
+    '<div class="card-body"><div class="card-left">' +
+    '<div class="card-section-title">What you\'ll eat</div>';
+  c.foods.forEach(function(f) {
+    html += '<div class="food-item"><div class="food-label">' + f.label + '</div><div class="food-value">' + f.value + '</div></div>';
+  });
+  html += '</div><div class="card-right"><div class="card-section-title">The practical stuff</div>' +
+    '<div class="practical-row"><span class="practical-label">Insulin access</span><span class="practical-value">' + dots(c.practical.insulin) + '</span></div>' +
+    '<div class="practical-row"><span class="practical-label">CGM supply</span><span class="practical-value">' + dots(c.practical.cgm) + '</span></div>' +
+    '<div class="practical-row"><span class="practical-label">Medical English</span><span class="practical-value">' + dots(c.practical.english) + '</span></div>' +
+    '<div class="practical-row"><span class="practical-label">Healthcare deal</span><span class="practical-value ' + c.practical.deal.cls + '">' + c.practical.deal.value + '</span></div>' +
+    '<div class="practical-row"><span class="practical-label">Time zone vs UK</span><span class="practical-value">' + c.practical.timezone + '</span></div>' +
+    '<div class="practical-row"><span class="practical-label">Heat risk for insulin</span><span class="practical-value ' + c.practical.heat.cls + '">' + c.practical.heat.value + '</span></div>' +
+    '<div class="headsup"><strong>Heads up:</strong> ' + c.headsup + '</div>' +
+    '</div></div></div>';
+  document.getElementById('cardContent').innerHTML = html;
+  document.getElementById('cardsSection').classList.add('visible');
+  document.getElementById('cardsSection').scrollIntoView({ behavior: 'smooth' });
+}
+
+function closeCard() {
+  document.getElementById('cardsSection').classList.remove('visible');
+  document.getElementById('cardContent').innerHTML = '';
+}
+
+var fly = '#2a9d8f', drive = '#e9a84c', bus = '#e07b6b', ferry = '#5b7fa6', train = '#8b6fb5';
+
+var routes = [
+  { coords: [[51.48, -0.46], [40.71, -74.01]], color: fly },
+  { coords: [[40.71, -74.01], [34.05, -118.24]], color: fly },
+  { coords: [[34.05, -118.24], [-37.81, 144.96]], color: fly },
+  { coords: [[-37.81, 144.96], [-33.87, 151.21]], color: drive },
+  { coords: [[-33.87, 151.21], [-37.81, 144.96]], color: fly },
+  { coords: [[-37.81, 144.96], [-38.66, 143.10]], color: drive },
+  { coords: [[-38.66, 143.10], [-37.81, 144.96]], color: drive },
+  { coords: [[-37.81, 144.96], [-45.03, 168.66]], color: fly },
+  { coords: [[-45.03, 168.66], [-44.70, 167.92]], color: drive },
+  { coords: [[-44.70, 167.92], [-45.03, 168.66]], color: drive },
+  { coords: [[-45.03, 168.66], [-44.63, 169.33]], color: drive },
+  { coords: [[-44.63, 169.33], [-43.59, 170.14]], color: drive },
+  { coords: [[-43.59, 170.14], [-43.53, 172.64]], color: drive },
+  { coords: [[-43.53, 172.64], [-42.40, 173.68]], color: drive },
+  { coords: [[-42.40, 173.68], [-41.51, 173.96]], color: drive },
+  { coords: [[-41.51, 173.96], [-41.29, 174.78]], color: drive },
+  { coords: [[-41.29, 174.78], [-38.69, 176.07]], color: drive },
+  { coords: [[-38.69, 176.07], [-38.14, 176.25]], color: drive },
+  { coords: [[-38.14, 176.25], [-37.79, 175.28]], color: drive },
+  { coords: [[-37.79, 175.28], [-36.85, 174.76]], color: drive },
+  { coords: [[-36.85, 174.76], [-27.47, 153.03]], color: fly },
+  { coords: [[-27.47, 153.03], [-16.92, 145.77]], color: fly },
+  { coords: [[-16.92, 145.77], [-19.26, 146.82]], color: bus },
+  { coords: [[-19.26, 146.82], [-20.27, 148.72]], color: bus },
+  { coords: [[-20.27, 148.72], [-25.90, 153.00]], color: bus },
+  { coords: [[-25.90, 153.00], [-26.39, 152.88]], color: bus },
+  { coords: [[-26.39, 152.88], [-26.65, 152.96]], color: bus },
+  { coords: [[-26.65, 152.96], [-26.49, 153.01]], color: bus },
+  { coords: [[-26.49, 153.01], [-28.65, 153.59]], color: bus },
+  { coords: [[-28.65, 153.59], [-33.87, 151.21]], color: bus },
+  { coords: [[-33.87, 151.21], [13.75, 100.52]], color: fly },
+  { coords: [[13.75, 100.52], [7.88, 98.39]], color: fly },
+  { coords: [[7.88, 98.39], [7.74, 98.78]], color: ferry },
+  { coords: [[7.74, 98.78], [7.60, 99.04]], color: ferry },
+  { coords: [[7.60, 99.04], [8.03, 98.83]], color: bus },
+  { coords: [[8.03, 98.83], [9.32, 99.69]], color: bus },
+  { coords: [[9.32, 99.69], [9.74, 100.00]], color: ferry },
+  { coords: [[9.74, 100.00], [10.10, 99.84]], color: ferry },
+  { coords: [[10.10, 99.84], [9.54, 100.06]], color: ferry },
+  { coords: [[9.54, 100.06], [9.14, 99.33]], color: ferry },
+  { coords: [[9.14, 99.33], [21.03, 105.85]], color: fly },
+  { coords: [[21.03, 105.85], [22.83, 105.00]], color: bus },
+  { coords: [[22.83, 105.00], [20.25, 105.97]], color: bus },
+  { coords: [[20.25, 105.97], [17.47, 106.62]], color: bus },
+  { coords: [[17.47, 106.62], [16.46, 107.60]], color: bus },
+  { coords: [[16.46, 107.60], [15.88, 108.34]], color: bus },
+  { coords: [[15.88, 108.34], [11.94, 108.44]], color: fly },
+  { coords: [[11.94, 108.44], [10.82, 106.63]], color: bus },
+  { coords: [[10.82, 106.63], [35.68, 139.69]], color: fly },
+  { coords: [[35.68, 139.69], [35.01, 135.76]], color: train },
+  { coords: [[35.01, 135.76], [34.69, 135.50]], color: train },
+  { coords: [[34.69, 135.50], [35.68, 139.69]], color: train },
+  { coords: [[35.68, 139.69], [37.57, 126.98]], color: fly },
+  { coords: [[37.57, 126.98], [51.48, -0.46]], color: fly }
+];
+
+routes.forEach(function(r) {
+  L.polyline(r.coords, { color: r.color, weight: 2.5, opacity: 0.8 }).addTo(map);
+});
+
+var stops = [
+  [51.48, -0.46], [40.71, -74.01], [34.05, -118.24],
+  [-37.81, 144.96], [-33.87, 151.21], [-38.66, 143.10],
+  [-45.03, 168.66], [-44.70, 167.92], [-44.63, 169.33],
+  [-43.59, 170.14], [-43.53, 172.64], [-42.40, 173.68],
+  [-41.51, 173.96], [-41.29, 174.78], [-38.69, 176.07],
+  [-38.14, 176.25], [-37.79, 175.28], [-36.85, 174.76],
+  [-27.47, 153.03], [-16.92, 145.77], [-19.26, 146.82],
+  [-20.27, 148.72], [-25.90, 153.00], [-26.39, 152.88],
+  [-26.65, 152.96], [-26.49, 153.01], [-28.65, 153.59],
+  [-33.87, 151.21], [13.75, 100.52], [7.88, 98.39],
+  [7.74, 98.78], [7.60, 99.04], [8.03, 98.83],
+  [9.32, 99.69], [9.74, 100.00], [10.10, 99.84],
+  [9.54, 100.06], [9.14, 99.33], [21.03, 105.85],
+  [22.83, 105.00], [20.25, 105.97], [17.47, 106.62],
+  [16.46, 107.60], [15.88, 108.34], [11.94, 108.44],
+  [10.82, 106.63], [35.68, 139.69], [35.01, 135.76],
+  [34.69, 135.50], [37.57, 126.98]
+];
+
+stops.forEach(function(s) {
+  L.circleMarker(s, {
+    radius: 3, fillColor: '#2c2c2c', color: 'white',
+    weight: 1, opacity: 1, fillOpacity: 0.8
+  }).addTo(map);
+});
+
+var markerStyle = { radius: 9, fillColor: '#c0392b', color: 'white', weight: 2.5, opacity: 1, fillOpacity: 1 };
+
+var markers = {
+  usa: L.circleMarker([34.05, -118.24], markerStyle),
+  australia:  L.circleMarker([-37.81, 144.96], markerStyle),
+  newzealand: L.circleMarker([-36.85, 174.76], markerStyle),
+  thailand:   L.circleMarker([13.75, 100.52],  markerStyle),
+  vietnam:    L.circleMarker([21.03, 105.85],  markerStyle),
+  japan:      L.circleMarker([35.68, 139.69],  markerStyle),
+  southkorea: L.circleMarker([37.57, 126.98],  markerStyle)
+};
+
+Object.keys(markers).forEach(function(key) {
+  var offsets = {
+    newzealand: L.point(-230, 10),
+    australia: L.point(-30, 10),
+  };
+  var popupOpts = {
+    maxWidth: 240,
+    autoPan: false,
+    offset: offsets[key] || L.point(0, 10)
+  };
+  markers[key].addTo(map).bindPopup(popupHTML(key), popupOpts);
+  markers[key].on('click', function() { this.openPopup(); });
+});
+</script>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

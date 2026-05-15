@@ -110,7 +110,7 @@ Start ordering as frequently as your prescription allows, at least 6 months befo
 <span class="fact-label">The hardest time zone shift of the trip. Los Angeles to Melbourne.</span>
 </div>
 
-![](images/compressed_IMG_6204.jpeg){description="Fire dancer on Koh Phi Phi. One of those evenings that's hard to describe to someone who wasn't there." fig-alt="A fire dancer spinning fire on a beach on Koh Phi Phi in Thailand at night."}
+![](images/compressed_IMG_3882.jpeg){description="Daily changs on the Khao San Road are a must." fig-alt="Twp people drinking Chang beers on the Khao San Road in Bangkok, Thailand."}
 
 ![](images/compressed_IMG_4141.JPG){description="K'Gari gang, better known as the Dingo Divas." fig-alt="A group of people posing together on a gar on K'Gari, formerly Fraser Island, in Queensland, Australia."}
 
@@ -131,6 +131,9 @@ Managing Type 1 diabetes while travelling through some fairly remote parts of th
 ![](images/compressed_IMG_4336.jpeg){description="Sydney at sunset." fig-alt="A sunset view of the Sydney skyline with an orange sky behind the buildings."}
 
 ![](images/compressed_45478592.jpg){description="Reunion after a very wet and stormy Whitsundays tour." fig-alt="A group of friends reunited and smiling after a stormy Whitsundays boat tour in Queensland, Australia."}
+
+![](images/compressed_IMG_4195.jpeg){description="Somewhere between Melbourne and Sydney, the night before New Year's Eve." fig-alt="A group of friends raising glasses at a house somewhere between Melbourne and Sydney on New Year's Eve."}
+
 :::
 
 ```{=html}
@@ -253,6 +256,22 @@ I spent eight months travelling across seven countries, the US, Australia, New Z
 A year on from coming home, here are the ten things I wish someone had told me before I left.
 :::
 
+```{=html}
+<div class="map-teaser">
+  <div class="map-teaser-left">
+    <div class="map-teaser-label">Interactive Map</div>
+    <div class="map-teaser-title">The Route and Country Guide</div>
+    <div class="map-teaser-desc">The full eight month route across seven countries, colour coded by transport mode, with a diabetes travel guide for every country including food tips, insulin access, CGM supply ratings, and what to know before you go.</div>
+    <a href="map.html" class="map-teaser-btn">Explore the route and country guide →</a>
+  </div>
+  <div class="map-teaser-right">
+    <div class="map-teaser-stat"><span class="map-teaser-num">7</span><span class="map-teaser-sublabel">Countries</span></div>
+    <div class="map-teaser-stat"><span class="map-teaser-num">8</span><span class="map-teaser-sublabel">Months</span></div>
+    <div class="map-teaser-stat"><span class="map-teaser-num">5</span><span class="map-teaser-sublabel">Transport modes</span></div>
+  </div>
+</div>
+```
+
 ## 1. Begin Stocking Up on Medicine at Least 6 Months Before Leaving {#stocking-up}
 
 Like most Type 1 diabetics, I already had a reasonable backstock at home, the kind you quietly accumulate for those just in case moments. But preparing for eight months of travel required a more deliberate approach. Rather than ordering when I genuinely needed to, I started ordering on a set schedule, as frequently as my prescription would allow, slowly building a substantial surplus over the course of a year. I never ordered more than my recommended amount at any one time, I just stopped waiting until I was running low.
@@ -330,7 +349,7 @@ Fortunately, I had stored the whole system inside a rigid plastic case, and that
 The other challenge was hiking in New Zealand during summer. Leaving insulin in a hot car while we were out on a trail wasn't something I was willing to risk, so I ended up carrying my full supply with me on hikes. It was an added weight and an annoyance, but the alternative wasn't worth considering.
 
 ::: {.callout-tip}
-** Keeping insulin safe:** Frio bags are excellent but bulky. Whatever storage system you use, keep it inside a rigid case inside a ziplock bag, and set a 48-hour reminder to air it out. Heat destroys insulin quickly and there is no recovering it once it's gone.
+**Keeping insulin safe:** Frio bags are excellent but bulky. Whatever storage system you use, keep it inside a rigid case inside a ziplock bag, and set a 48-hour reminder to air it out. Heat destroys insulin quickly and there is no recovering it once it's gone.
 :::
 
 ## 6. Be Prepared for Issues. Bring Backups and Assume You Will Run Out. {#backups}
