@@ -203,6 +203,7 @@ a:hover {
     padding-top: 1em;
     width: 100%;
     justify-content: space-around;
+    align-items: flex-start;
   }
 }
 
