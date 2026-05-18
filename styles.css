@@ -288,16 +288,6 @@ div.callout-tip .callout-body {
 }
 
 /* ============================================
-   CODE BUTTON
-   ============================================ */
-
-.code-tools-button {
-  color: #2a9d8f;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.85em;
-}
-
-/* ============================================
    ANCHOR LINKS
    ============================================ */
 
@@ -370,6 +360,82 @@ div.callout-tip .callout-body {
   line-height: 1.4;
   display: block;
   margin-top: 0.2em;
+}
+
+/* ============================================
+   CHECKLIST DOWNLOAD
+   ============================================ */
+
+.checklist-download {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  background: #f0f7f4;
+  border: 2px solid #2a9d8f;
+  border-radius: 10px;
+  padding: 1.6em 2em;
+  margin: 1.8em 0;
+}
+
+.checklist-download-left {
+  flex: 1;
+}
+
+.checklist-label {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.4em;
+}
+
+.checklist-title {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.4em;
+}
+
+.checklist-desc {
+  font-family: 'Georgia', serif;
+  font-size: 0.88em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.checklist-btn {
+  display: inline-block;
+  background: #2a9d8f;
+  color: white;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  padding: 0.7em 1.6em;
+  border-radius: 5px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.checklist-btn:hover {
+  background: #1f7a6e;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .checklist-download {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .checklist-btn {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* ============================================

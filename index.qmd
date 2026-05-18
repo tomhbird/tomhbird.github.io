@@ -134,6 +134,8 @@ Managing Type 1 diabetes while travelling through some fairly remote parts of th
 
 ![](images/compressed_IMG_4195.jpeg){description="Somewhere between Melbourne and Sydney, the night before New Year's Eve." fig-alt="A group of friends raising glasses at a house somewhere between Melbourne and Sydney on New Year's Eve."}
 
+![](images/compressed_IMG_7826.jpeg){description="Mount Fuji at the end of the street. Japan has a way of surprising you." fig-alt="A Japanese street in Fujikawaguchiko with Mount Fuji visible at the end of the road, framed by shop signs and power lines."}
+
 :::
 
 ```{=html}
@@ -441,6 +443,18 @@ So, if you're sitting at home right now wondering whether Type 1 diabetes means 
 It's the best thing I've ever done. Go do yours.
 
 :::
+
+
+```{=html}
+<div class="checklist-download">
+  <div class="checklist-download-left">
+    <div class="checklist-label">Free Download</div>
+    <div class="checklist-title">Pre-Flight Diabetes Checklist</div>
+    <div class="checklist-desc">Everything you need to prepare for travelling with Type 1 diabetes, from GP appointments to packing and airport security. Print it or save it to your phone.</div>
+  </div>
+  <a href="images/t1d-travel-checklist.pdf" download class="checklist-btn">Download PDF →</a>
+</div>
+```
 
 *If you're ready to start planning, the resources below are a good place to begin.*
 
